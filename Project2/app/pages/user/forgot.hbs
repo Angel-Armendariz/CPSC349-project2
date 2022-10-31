@@ -1,5 +1,31 @@
+
 <form action="/user/forgot" method="post">
-  <h1>Forgot Password</h1>
-  <input type="text" name="username" placeholder="Your username" required>
-  <button type="submit">Send reset password link</button>
+
+<div class="flex
+            flex-col
+            items-center 
+            space-y-6
+            border-8">
+
+  <h1 class="text-green-500 text-xl mb-3">Forgot Password</h1>
+
+  <input type="text" name="username" placeholder="Your username" required class="border-2">
+
+  <button type="submit"
+          class="transition
+                 ease-in-out
+                 delay-150
+                 hover:-translate-y-1
+                 hover:scale-110
+                 hover:bg-indigo-500
+                 duration-300
+                 text-white
+                 text-center
+                 bg-cyan-500
+                 shadow-sm
+                 shadow-cyan-500
+                 rounded-md m-4">Send reset password link</button>
+
+</div>
+
 </form>

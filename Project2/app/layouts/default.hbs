@@ -1,40 +1,141 @@
 <!doctype html>
 <html lang="en">
+
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Your App</title>
+
   <link rel="stylesheet" type="text/css" href="/assets/css/_remake.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
-<body>
+
+
+
+
+<body class="bg-indigo-70">
+
   {{#if currentUser}}
+
     <a href="/user/logout">Logout</a>
+
   {{else}}
-    <a class="nav__button" href="/user/signup">Sign up</a>
-    &nbsp;
-    <a class="nav__button" href="/user/login">Log in</a>
+
+<nav class="relative
+            container
+            mx-auto
+            p-6">
+
+
+  <div class="flex
+              items-center
+              justify-between">
+
+    <a class="transition
+              ease-in-out
+              delay-150
+              hover:-translate-y-1
+              hover:scale-110
+              hover:bg-indigo-500
+              duration-300
+              text-white
+              bg-cyan-500
+              shadow-lg
+              shadow-cyan-500/50
+              rounded-md
+              nav__button"
+
+        href="/user/signup">Sign up</a>
+
+        &nbsp;
+
+    <a class="transition
+              ease-in-out
+              delay-150
+              hover:-translate-y-1
+              hover:scale-110
+              hover:bg-indigo-500
+              duration-300
+              text-white
+              bg-cyan-500
+              shadow-lg
+              shadow-cyan-500/50
+              rounded-md nav__button"
+        href="/user/login">Log in</a>
+
+  </div>
+</nav>
+
   {{/if}}
+
+
+
   {{!-- Show errors --}}
   {{#if flashErrors }}
     {{#each flashErrors }}
-      <div>{{ this }}</div>
+
+
+      <div class="container
+                  mx-auto
+                  text-white
+                  text-center
+                  bg-indigo-500
+                  shadow-lg
+                  shadow-indigo-5
+                  rounded-md m-4">{{ this }}</div>
+
+
     {{/each}}
   {{/if}}
+
+
+
+
   {{!-- Show success messages --}}
   {{#if flashSuccesses }}
     {{#each flashSuccesses }}
-      <div>{{ this }}</div>
+
+      <div class="container
+                  mx-auto
+                  text-white
+                  text-center
+                  bg-indigo-500
+                  shadow-lg
+                  shadow-indigo-5
+                  rounded-md m-4">{{ this }}</div>
+
     {{/each}}
   {{/if}}
+
+
   {{> yield }}
+
+
   {{#if isPageAuthor}}
+
+
     {{!-- Prevent loading the Remake framework if the page isn't editable --}}
-    <script src="/assets/js/vendor/Sortable.min.js"></script>
-    <script src="/assets/js/vendor/crostini.min.js"></script>
-    <script src="/remake/js/remake.min.js"></script>
-    <script src="/assets/js/remake-init.js"></script>
+    <script src="/assets/js/vendor/Sortable.min.js">
+    </script>
+
+    <script src="/assets/js/vendor/crostini.min.js">
+    </script>
+
+    <script src="/remake/js/remake.min.js">
+    </script>
+
+    <script src="/assets/js/remake-init.js">
+    </script>
+
+
   {{/if}}
-  <script src="/assets/js/main.js"></script>
+
+  <script src="/assets/js/main.js">
+  </script>
+
+
+
 </body>
 </html>
