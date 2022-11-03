@@ -1,40 +1,58 @@
 
-<h1 class="container
-           mx-auto
-           text-white
-           text-center
-           bg-indigo-500
-           shadow-lg
-           shadow-indigo-500
-           rounded-md m-4">Welcome to my app!</h1>
 
-<ul>
-  {{#if currentUser}}
+<div class="flex justify-evenly flex-col rounded-md">
 
-    <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
+      <h1 class="mx-auto
+                 text-white 
+                 text-center
+                 bg-indigo-500         
+                 shadow-lg 
+                 shadow-indigo-500
+                 rounded-md m-4">Welcome to my app!</h1>
 
-  {{else}}
 
-    <li>
 
-      <div class="flex items-center justify-center">
 
-      <a href="/user/signup"
-         class="transition
-                ease-in-out
-                delay-150
-                hover:-translate-y-1
-                hover:scale-110
-                hover:bg-indigo-500
-                duration-300
-                text-white
-                text-center
-                bg-cyan-500
-                shadow-sm
-                shadow-cyan-500
-                rounded-md m-4">Sign up for an account</a>
-    </div>
-    </li>
+    <main class="container mx-auto justify-center flex-col shadow-lg rounded-md bg-white p-5 space-y-5">
 
-  {{/if}}
-</ul>
+        <div class="text-center shadow-lg rounded-md p5 bg-gray-100 basis-40">Student/video of calendar</div>
+
+        <div class="text-center shadow-lg rounded-md p5 bg-gray-100 basis-50">function of calendar and how it works</div>
+    </main>
+
+
+
+
+        <ul>
+              {{#if currentUser}}
+
+                        <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
+
+              {{else}}
+
+                        <li>
+
+                            <div class="flex items-center justify-center">
+
+                                <a class="transition 
+                                          ease-in-out 
+                                          delay-150 
+                                          hover:-translate-y-1 
+                                          hover:scale-110 
+                                          hover:bg-indigo-500 
+                                          duration-300           
+                                          text-white
+                                          text-center
+                                          bg-cyan-500 
+                                          shadow-lg 
+                                          shadow-cyan-500
+                                          rounded-md 
+                                          m-4" href="/user/signup">Sign up for an account</a>
+                            </div>
+                          </li>
+
+              {{/if}}
+          </ul>
+
+
+</div>
