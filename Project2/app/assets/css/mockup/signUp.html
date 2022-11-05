@@ -1,0 +1,388 @@
+<!doctype html>
+  <html lang="en">
+
+
+<!-- ============================== head and Title part of lay out===============================-->
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Your App</title>
+
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <link rel="stylesheet" type="text/css" href="./_remake.css">
+
+</head>
+
+
+
+<!-- =============================================================================================-->
+
+<body class="bg-gray-100">
+
+
+<!-- HHHHHHHHHHHHHHHHHHHHHHH  this part is the Header HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH-->
+<header>
+
+
+
+    <nav class="p-6">
+
+
+      <div class="flex flex-wrap justify-around">
+
+          <a class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-1
+                    hover:scale-110 
+                    hover:bg-indigo-500 
+                    duration-300 
+                    text-white 
+                    bg-cyan-500 
+                    shadow-lg 
+                    shadow-cyan-500/50 
+                    rounded-md" href="/user/aboutus">About US</a>
+
+          <a class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-
+                    hover:scale-110 
+                    hover:bg-indigo-500
+                    duration-300 
+                    text-white 
+                    bg-cyan-500 
+                    shadow-lg 
+                    shadow-cyan-500/50 
+                    rounded-md" href="/user/forgot">Forget Password</a>
+
+          <a class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-
+                    hover:scale-110 
+                    hover:bg-indigo-500
+                    duration-300 
+                    text-white 
+                    bg-cyan-500 
+                    shadow-lg 
+                    shadow-cyan-500/50 
+                    rounded-md" href="/user/reset">Reset Password</a>
+       
+          <a class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-1 
+                    hover:scale-110 
+                    hover:bg-indigo-500 
+                    duration-300 
+                    text-white 
+                    bg-cyan-500 
+                    shadow-lg 
+                    shadow-cyan-500/50 
+                    rounded-md 
+                    nav__button" href="/user/logout">Logout</a>
+
+        </div>
+    </nav>
+
+
+
+  <nav class="p-6">
+
+
+  <div class="flex justify-around flex-wrap">
+    
+
+          <a class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-1 
+                    hover:scale-110 
+                    hover:bg-indigo-500 
+                    duration-300 
+                    text-white 
+                    bg-cyan-500 
+                    shadow-lg 
+                    shadow-cyan-500/50 
+                    rounded-md 
+                    nav__button" href="/user/signup">Sign up</a>
+
+          <a class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-1
+                    hover:scale-110 
+                    hover:bg-indigo-500 
+                    duration-300 
+                    text-white 
+                    bg-cyan-500 
+                    shadow-lg 
+                    shadow-cyan-500/50 
+                    rounded-md" href="/user/aboutus">About US</a>
+
+          <a class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-
+                    hover:scale-110 
+                    hover:bg-indigo-500
+                    duration-300 
+                    text-white 
+                    bg-cyan-500 
+                    shadow-lg 
+                    shadow-cyan-500/50 
+                    rounded-md" href="/user/forgot">Forget Password</a>
+
+          <a class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-
+                    hover:scale-110 
+                    hover:bg-indigo-500
+                    duration-300 
+                    text-white 
+                    bg-cyan-500 
+                    shadow-lg 
+                    shadow-cyan-500/50 
+                    rounded-md" href="/user/reset">Reset Password</a>
+
+          <a class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-1 
+                    hover:scale-110 
+                    hover:bg-indigo-500 
+                    duration-300 
+                    text-white 
+                    bg-cyan-500 
+                    shadow-lg 
+                    shadow-cyan-500/50 
+                    rounded-md nav__button" href="/user/login">Log in</a>
+
+  </div>
+  </nav>
+
+
+  </header>
+
+<hr>
+
+<!--HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH-->
+
+
+
+
+<!--MMMMMMMMMMMMMMMMMMMMM this part of the lay out act as main -MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM-->
+
+<main>
+
+
+      <div class="container 
+                  mx-auto
+                  text-white 
+                  text-center
+                  bg-indigo-500  
+                  shadow-lg 
+                  shadow-indigo-5
+                  rounded-md m-4"></div>
+      <div class="container 
+                  mx-auto
+                  text-white 
+                  text-center
+                  bg-indigo-500  
+                  shadow-lg 
+                  shadow-indigo-5
+                  rounded-md m-4"></div>
+<form action="/user/signup" method="post">
+
+  <div class="flex 
+              flex-col 
+              items-center 
+              space-y-6 
+              border-8">
+
+  <h1 class="text-green-500 text-xl mb-3">Sign up</h1>
+
+  <input type="text" name="username" placeholder="Username" required class="border-2"> 
+
+  <input type="email" name="email" placeholder="Email" required class="border-2">
+
+  <input type="password" name="password" placeholder="Password" required class="border-2">
+
+  <button type="submit" 
+          class="transition 
+                 ease-in-out 
+                 delay-150 
+                 hover:-translate-y-1 
+                 hover:scale-110 
+                 hover:bg-indigo-500 
+                 duration-300
+                 text-white
+                 text-center
+                 bg-cyan-500 
+                 shadow-sm 
+                 shadow-cyan-500
+                 rounded-md m-4">Sign up</button>
+  <div>
+
+</form>
+
+
+
+</main>
+
+<!--MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM-->
+
+
+<hr>
+
+<!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF-->
+<footer>
+
+  <nav class="p-6">
+
+    <div class="flex flex-wrap justify-around">
+
+        <a class="transition 
+                  ease-in-out 
+                  delay-150 
+                  hover:-translate-y-1
+                  hover:scale-110 
+                  hover:bg-indigo-500 
+                  duration-300 
+                  text-white 
+                  bg-cyan-500 
+                  shadow-lg 
+                  shadow-cyan-500/50 
+                  rounded-md" href="/user/aboutus">About US</a>
+
+        <a class="transition 
+                  ease-in-out 
+                  delay-150 
+                  hover:-translate-y-
+                  hover:scale-110 
+                  hover:bg-indigo-500
+                  duration-300 
+                  text-white 
+                  bg-cyan-500 
+                  shadow-lg 
+                  shadow-cyan-500/50 
+                  rounded-md" href="/user/forgot">Forget Password</a>
+
+        <a class="transition 
+                  ease-in-out 
+                  delay-150 
+                  hover:-translate-y-
+                  hover:scale-110 
+                  hover:bg-indigo-500
+                  duration-300 
+                  text-white 
+                  bg-cyan-500 
+                  shadow-lg 
+                  shadow-cyan-500/50 
+                  rounded-md" href="/user/reset">Reset Password</a>
+     
+        <a class="transition 
+                  ease-in-out 
+                  delay-150 
+                  hover:-translate-y-1 
+                  hover:scale-110 
+                  hover:bg-indigo-500 
+                  duration-300 
+                  text-white 
+                  bg-cyan-500 
+                  shadow-lg 
+                  shadow-cyan-500/50 
+                  rounded-md 
+                  nav__button" href="/user/logout">Logout</a>
+      </div>
+  </nav>
+<nav class="p-6">
+<div class="flex justify-around flex-wrap">
+  
+        <a class="transition 
+                  ease-in-out 
+                  delay-150 
+                  hover:-translate-y-1 
+                  hover:scale-110 
+                  hover:bg-indigo-500 
+                  duration-300 
+                  text-white 
+                  bg-cyan-500 
+                  shadow-lg 
+                  shadow-cyan-500/50 
+                  rounded-md 
+                  nav__button" href="/user/signup">Sign up</a>
+
+        <a class="transition 
+                  ease-in-out 
+                  delay-150 
+                  hover:-translate-y-1
+                  hover:scale-110 
+                  hover:bg-indigo-500 
+                  duration-300 
+                  text-white 
+                  bg-cyan-500 
+                  shadow-lg 
+                  shadow-cyan-500/50 
+                  rounded-md" href="/user/aboutus">About US</a>
+
+        <a class="transition 
+                  ease-in-out 
+                  delay-150 
+                  hover:-translate-y-
+                  hover:scale-110 
+                  hover:bg-indigo-500
+                  duration-300 
+                  text-white 
+                  bg-cyan-500 
+                  shadow-lg 
+                  shadow-cyan-500/50 
+                  rounded-md" href="/user/forgot">Forget Password</a>
+
+        <a class="transition 
+                  ease-in-out 
+                  delay-150 
+                  hover:-translate-y-
+                  hover:scale-110 
+                  hover:bg-indigo-500
+                  duration-300 
+                  text-white 
+                  bg-cyan-500 
+                  shadow-lg 
+                  shadow-cyan-500/50 
+                  rounded-md" href="/user/reset">Reset Password</a>
+
+        <a class="transition 
+                  ease-in-out 
+                  delay-150 
+                  hover:-translate-y-1 
+                  hover:scale-110 
+                  hover:bg-indigo-500 
+                  duration-300 
+                  text-white 
+                  bg-cyan-500 
+                  shadow-lg 
+                  shadow-cyan-500/50 
+                  rounded-md nav__button" href="/user/login">Log in</a>
+</div>
+</nav>
+
+
+</footer>
+<!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF-->
+
+
+
+
+
+
+
+  </body>
+
+</html>
