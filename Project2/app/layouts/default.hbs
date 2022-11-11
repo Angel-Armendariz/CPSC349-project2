@@ -25,7 +25,7 @@
 
 <body class="bg-gray-100">
 
-/
+
 <!-- ===========================header=============================================================-->
 <header>
 
@@ -163,17 +163,6 @@
                     nav__button" href="/login">Log in</a>
         </div>
 
-        <h1 class=" container
-                    mx-auto
-                    text-white
-                    text-xl
-                    text-center
-                    bg-indigo-500
-                    shadow-lg
-                    shadow-indigo-500
-                    p-3
-                    rounded-md m-4">Home</h1>
-
 </nav>
 
 
@@ -257,14 +246,16 @@
   <nav class="p-6">
 
     <div class="flex justify-center p-10">
+      |&nbsp;  <a class="hover:text-blue-300" href="/index">Home</a>  	&nbsp;|	 	&nbsp;
 
-       |&nbsp; <a class="hover:text-blue-300" href="/user/aboutus">About US</a>  &nbsp;|	 	&nbsp;
-
-
-              <a  class="hover:text-blue-300"  href="/app-index">Calendar</a>  &nbsp;|	 	&nbsp;
+        <a  class="hover:text-blue-300"  href="/{{currentUser.details.username}}/app-index">Calendar</a> 	&nbsp;| 	&nbsp;
 
 
-               <a class="hover:text-blue-300" href="/user/logout">Logout</a>   &nbsp;|
+        <a class="hover:text-blue-300" href="/aboutus">About Us</a>  &nbsp;| 	&nbsp;
+
+
+        <a class="hover:text-blue-300" href="/user/logout">Logout</a> 	&nbsp;|
+
       </div>
   </nav>
 
@@ -274,15 +265,15 @@
 
 <div class="">
 
-|&nbsp;  <a class="hover:text-blue-300 nav__button" href="/user/signup">Sign up</a>  	&nbsp;|	 	&nbsp;
+|&nbsp;  <a class="hover:text-blue-300" href="/index">Home</a>  	&nbsp;|	 	&nbsp;
 
-        <a class="hover:text-blue-300" href="/user/aboutus">About US</a> 	&nbsp;| 	&nbsp;
-
-
-        <a class="hover:text-blue-300" href="/index">Home</a>  &nbsp;| 	&nbsp;
+        <a class="hover:text-blue-300" href="/aboutus">About Us</a> 	&nbsp;| 	&nbsp;
 
 
-        <a class="hover:text-blue-300 nav__button" href="/user/login">Log in</a> 	&nbsp;|
+        <a class="hover:text-blue-300 nav__button" href="/user/signup">Sign Up</a>  &nbsp;| 	&nbsp;
+
+
+        <a class="hover:text-blue-300 nav__button" href="/user/login">Log In</a> 	&nbsp;|
 </div>
 </nav>
 {{/if}}

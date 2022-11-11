@@ -1,1 +1,19 @@
-{}
+{
+  "name": "Click here to enter your name ",
+  "month": "Feb",
+  "years": "2023",
+  "sundaysecond": "2",
+  "secondPageSundayTodo": [],
+  "mondaysecond": "3",
+  "secondPageMondayTodo": [],
+  "tuesdaysecond": "Enter Date",
+  "secondPageTuesdayTodo": [],
+  "wednesdaysecond": "Enter Date",
+  "secondPageWednesdayTodo": [],
+  "thursdaysecond": "Enter Date",
+  "secondPageThursdayTodo": [],
+  "fridaysecond": "Enter Date",
+  "secondPageFridayTodo": [],
+  "saturdaysecond": "Enter Date",
+  "secondPageSaturdayTodo": []
+}
