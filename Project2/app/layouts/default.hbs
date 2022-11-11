@@ -2,7 +2,7 @@
   <html lang="en">
 
 
-<!-- ============================== head and Title part of layout===============================-->
+<!-- ============================== head and Title===============================-->
 
 
 
@@ -25,12 +25,9 @@
 
 <body class="bg-gray-100">
 
-
-<!-- HHHHHHHHHHHHHHHHHHHHHHH  this part is the Header HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH-->
+/
+<!-- ===========================header=============================================================-->
 <header>
-
-
-
 
   {{#if currentUser}}
 
@@ -39,7 +36,21 @@
 
       <div class="flex flex-wrap justify-around">
 
-          <a class="transition
+        <a class="transition
+          ease-in-out
+          delay-150
+          hover:-translate-y-1
+          hover:scale-110
+          hover:bg-indigo-500
+          duration-300
+          text-white
+          bg-cyan-500
+          shadow-lg
+          shadow-cyan-500/50
+          p-3
+          rounded-md nav__button" href="/index">Home</a>
+
+        <a class="transition
                   ease-in-out
                   delay-150
                   hover:-translate-y-1
@@ -51,49 +62,36 @@
                   shadow-lg
                   shadow-cyan-500/50
                   p-3
-                  rounded-md nav__button" href="/user/aboutus">About US</a>
+                  rounded-md nav__button" href="/{{currentUser.details.username}}/app-index">Calendar</a>
+
+ <a class="transition
+           ease-in-out
+           delay-150
+           hover:-translate-y-1
+           hover:scale-110
+           hover:bg-indigo-500
+           duration-300
+           text-white
+           bg-cyan-500
+           shadow-lg
+           shadow-cyan-500/50
+           p-3
+           rounded-md" href="/aboutus">About Us</a>
+
 
           <a class="transition
-                  ease-in-out
-                  delay-150
-                  hover:-translate-y-1
-                  hover:scale-110
-                  hover:bg-indigo-500
-                  duration-300
-                  text-white
-                  bg-cyan-500
-                  shadow-lg
-                  shadow-cyan-500/50
-                  p-3
-                  rounded-md nav__button" href="/user/forgot">Forget Password</a>
-
-          <a class="transition
-                  ease-in-out
-                  delay-150
-                  hover:-translate-y-1
-                  hover:scale-110
-                  hover:bg-indigo-500
-                  duration-300
-                  text-white
-                  bg-cyan-500
-                  shadow-lg
-                  shadow-cyan-500/50
-                  p-3
-                  rounded-md nav__button" href="/user/reset">Reset Password</a>
-
-          <a class="transition
-                  ease-in-out
-                  delay-150
-                  hover:-translate-y-1
-                  hover:scale-110
-                  hover:bg-indigo-500
-                  duration-300
-                  text-white
-                  bg-cyan-500
-                  shadow-lg
-                  shadow-cyan-500/50
-                  p-3
-                  rounded-md nav__button" href="/user/logout">Logout</a>
+                    ease-in-out
+                    delay-150
+                    hover:-translate-y-1
+                    hover:scale-110
+                    hover:bg-indigo-500
+                    duration-300
+                    text-white
+                    bg-cyan-500
+                    shadow-lg
+                    shadow-cyan-500/50
+                    rounded-md
+                    p-3" href="/user/logout">Logout</a>
 
         </div>
     </nav>
@@ -105,8 +103,8 @@
 
   <nav class="p-6">
 
+ <div class="flex flex-wrap justify-around sticky top-0 pt-1">
 
-      <div class="flex flex-wrap justify-around sticky top-0 pt-1">
         <a class="transition
                   ease-in-out
                   delay-150
@@ -121,19 +119,6 @@
                   p-3
                   rounded-md nav__button" href="/index">Home</a>
 
-                  <a class="transition
-                  ease-in-out
-                  delay-150
-                  hover:-translate-y-1
-                  hover:scale-110
-                  hover:bg-indigo-500
-                  duration-300
-                  text-white
-                  bg-cyan-500
-                  shadow-lg
-                  shadow-cyan-500/50
-                  p-3
-                  rounded-md nav__button" href="/app-index">Calendar</a>
 
           <a class="transition
                     ease-in-out
@@ -147,8 +132,7 @@
                     shadow-lg
                     shadow-cyan-500/50
                     p-3
-                    rounded-md" href="/user/aboutus">About Us</a>
-
+                    rounded-md" href="/aboutus">About Us</a>
           <a class="transition
                     ease-in-out
                     delay-150
@@ -161,9 +145,9 @@
                     shadow-lg
                     shadow-cyan-500/50
                     p-3
-                    rounded-md nav__button" href="/user/signup">Sign Up</a>
+                    rounded-md nav__button" href="/signup">Sign Up</a>
 
-          <a class="transition block
+          <a class="transition
                     ease-in-out
                     delay-150
                     hover:-translate-y-1
@@ -176,11 +160,23 @@
                     shadow-cyan-500/50
                     rounded-md
                     p-3
-                    nav__button" href="/user/login">Log in</a>
-
-                    
+                    nav__button" href="/login">Log in</a>
         </div>
-    </nav>
+
+        <h1 class=" container
+                    mx-auto
+                    text-white
+                    text-xl
+                    text-center
+                    bg-indigo-500
+                    shadow-lg
+                    shadow-indigo-500
+                    p-3
+                    rounded-md m-4">Home</h1>
+
+</nav>
+
+
 
   {{/if}}
 
@@ -188,12 +184,12 @@
 
 <hr>
 
-<!--HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH-->
+<!--=======================================================================================================-->
 
 
 
 
-<!--MMMMMMMMMMMMMMMMMMMMM this part of the lay out act as main -MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM-->
+<!--==========================================Main===========================================================-->
 
 <main>
 
@@ -202,14 +198,7 @@
     {{#each flashErrors }}
 
 
-      <div class="container
-                  mx-auto
-                  text-white
-                  text-center
-                  bg-indigo-500
-                  shadow-lg
-                  shadow-indigo-5
-                  rounded-md m-4">{{ this }}</div>
+      <div class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">{{ this }}</div>
 
 
     {{/each}}
@@ -222,20 +211,13 @@
   {{#if flashSuccesses }}
     {{#each flashSuccesses }}
 
-      <div class="container
-                  mx-auto
-                  text-white
-                  text-center
-                  bg-indigo-500
-                  shadow-lg
-                  shadow-indigo-5
-                  rounded-md m-4">{{ this }}</div>
+      <div class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">{{ this }}</div>
 
     {{/each}}
   {{/if}}
 
 
-<!-- ???????????????????????? Do not understand what this code does . think this is also falls in main ?????????????????-->
+<!-- =======================================================================================-->
   {{> yield }}
 
 
@@ -259,19 +241,16 @@
     <script src="/assets/js/main.js">
     </script>
 
-<!--  ????????????????????????????????????????????????????????????????????????????????????????????????????????????????-->
-
-
-
+<!-- =========================================================================================================================-->
 
 </main>
 
-<!--MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM-->
+<!--=========================================================================================================================-->
 
 
 <hr>
 
-<!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF-->
+<!--====================================================Footer=========================================================-->
 <footer>
 
 {{#if currentUser}}
@@ -281,42 +260,36 @@
 
        |&nbsp; <a class="hover:text-blue-300" href="/user/aboutus">About US</a>  &nbsp;|	 	&nbsp;
 
-        <a class="hover:text-blue-300" href="/user/forgot">Forget Password</a>   &nbsp;|	 	&nbsp;
 
-        <a class="hover:text-blue-300" href="/user/reset">Reset Password</a>   &nbsp;|	 	&nbsp;
+              <a  class="hover:text-blue-300"  href="/app-index">Calendar</a>  &nbsp;|	 	&nbsp;
 
-        <a class="hover:text-blue-300" href="/user/logout">Logout</a>   &nbsp;|
+
+               <a class="hover:text-blue-300" href="/user/logout">Logout</a>   &nbsp;|
       </div>
   </nav>
+
 {{else}}
 
 <nav class="flex justify-center p-10">
 
-    <div class="">
+<div class="">
 
-    |&nbsp;  <a class="hover:text-blue-300 nav__button" href="/user/index">Home</a>  	&nbsp;|	 	&nbsp;
+|&nbsp;  <a class="hover:text-blue-300 nav__button" href="/user/signup">Sign up</a>  	&nbsp;|	 	&nbsp;
 
-            <a class="hover:text-blue-300" href="/app-index">Calendar</a> 	&nbsp;| 	&nbsp;
+        <a class="hover:text-blue-300" href="/user/aboutus">About US</a> 	&nbsp;| 	&nbsp;
 
-            <a class="hover:text-blue-300" href="/aboutus">About Us</a> 	&nbsp;| 	&nbsp;
 
-            <a class="hover:text-blue-300" href="/user/signup">Sign Up</a> 	&nbsp;| 	&nbsp;
+        <a class="hover:text-blue-300" href="/index">Home</a>  &nbsp;| 	&nbsp;
 
-            <a class="hover:text-blue-300 nav__button" href="/user/login">Log in</a> 	&nbsp;|
-    </div>
-    </nav>
-    <span>&copy;Copyright 2022</span>
+
+        <a class="hover:text-blue-300 nav__button" href="/user/login">Log in</a> 	&nbsp;|
+</div>
+</nav>
 {{/if}}
 
 
 </footer>
-<!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF-->
-
-
-
-
-
-
+<!--===================================================================================================================-->
 
   </body>
 
