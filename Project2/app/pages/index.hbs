@@ -1,31 +1,20 @@
-<main>
-    <h1 class=" container 
-                mx-auto
-                text-white 
-                text-xl
-                text-center
-                bg-indigo-500    
-                shadow-lg 
-                shadow-indigo-500
-                p-3
-                rounded-md m-4">Home</h1>
-
+<main class="pt-14">
   <iframe
     src="https://www.youtube.com/embed/PwoRpcpEbek"
     class="w-1/3
-            h-96 
-            block 
+            h-96
+            block
             mx-auto
             border-solid
             border-8
             border-indigo-500
             rounded-md" allowfullscreen>
   </iframe>
-  <h2 
+  <h2
       class=" text-xl
               text-center
               pt-1">Weekly Calendar Function</h2>
-  <p 
+  <p
     class=" text-med
             text-center
             mx-auto
@@ -38,40 +27,3 @@
 
 
 </main>
-
-
-
-
-        <ul>
-              {{#if currentUser}}
-
-                        <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
-
-              {{else}}
-
-                        <li>
-
-                            <div class="flex items-center justify-center">
-
-                                <a class="transition 
-                                          ease-in-out 
-                                          delay-150 
-                                          hover:-translate-y-1 
-                                          hover:scale-110 
-                                          hover:bg-indigo-500 
-                                          duration-300           
-                                          text-white
-                                          text-center
-                                          bg-cyan-500 
-                                          shadow-lg 
-                                          shadow-cyan-500
-                                          rounded-md 
-                                          m-4" href="/user/signup">Sign up for an account</a>
-                            </div>
-                          </li>
-
-              {{/if}}
-          </ul>
-
-
-</div>
