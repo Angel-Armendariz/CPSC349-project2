@@ -2,7 +2,7 @@
 
 <main>
         <h1 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-            <span object key:name="@innerText" edit:name>
+            <span object key:name="@innerText" edit:name:without-remove>
                 {{default name "Click here to enter your name"}}
             </span>'s Calendar
         </h1>
@@ -14,11 +14,11 @@
 
         <div class="flex justify-center">
             <h2 class="flex self-center text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-                <span object key:month="@innerText" edit:month>
+                <span object key:month="@innerText" edit:month:without-remove>
                         {{default month "Enter Month"}}
                 </span>, &nbsp;
 
-                <span object key:years="@innerText" edit:years>
+                <span object key:years="@innerText" edit:years:without-remove>
                         {{default years "Enter year"}}
                 </span>&nbsp; |  &nbsp; page 2
             </h2>
@@ -58,7 +58,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:sundaysecond="@innerText" edit:sundaysecond>{{default sundaysecond "Enter Date"}}</span>
+                    <span object key:sundaysecond="@innerText" edit:sundaysecond:without-remove>{{default sundaysecond "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -94,7 +94,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:mondaysecond="@innerText" edit:mondaysecond>{{default mondaysecond "Enter Date"}}</span>
+                    <span object key:mondaysecond="@innerText" edit:mondaysecond:without-remove>{{default mondaysecond "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -131,7 +131,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:tuesdaysecond="@innerText" edit:tuesdaySecond>{{default tuesdaysecond "Enter Date"}}</span>
+                    <span object key:tuesdaysecond="@innerText" edit:tuesdaysecond:without-remove>{{default tuesdaysecond "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -165,7 +165,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:wednesdaysecond="@innerText" edit:wednesdaysecond>{{default wednesdaysecond "Enter Date"}}</span>
+                    <span object key:wednesdaysecond="@innerText" edit:wednesdaysecond:without-remove>{{default wednesdaysecond "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -200,7 +200,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:thursdaysecond="@innerText" edit:thursdaysecond>{{default thursdaysecond "Enter Date"}}</span>
+                    <span object key:thursdaysecond="@innerText" edit:thursdaysecond:without-remove>{{default thursdaysecond "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -237,7 +237,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fridaysecond="@innerText" edit:fridaysecond>{{default fridaysecond "Enter Date"}}</span>
+                    <span object key:fridaysecond="@innerText" edit:fridaysecond:without-remove>{{default fridaysecond "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -247,7 +247,7 @@
 
                     {{#for todo in secondPageFridayTodo}}
                     <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
-                    object 
+                    object
                     key:text="@innerText"
                     edit:text>
                     {{default todo.text "New todo item"}}
@@ -271,7 +271,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:saturdaysecond="@innerText" edit:saturdaysecond>{{default saturdaysecond "Enter Date"}}</span>
+                    <span object key:saturdaysecond="@innerText" edit:saturdaysecond:without-remove>{{default saturdaysecond "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
