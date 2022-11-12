@@ -1,1 +1,20 @@
-{}
+{
+  "darkMode": "false",
+  "name": "Click here to enter your name ",
+  "month": "Enter Month",
+  "years": "Enter year",
+  "sunday": "Enter Date",
+  "firstPageSundayTodo": [],
+  "monday": "Enter Date",
+  "firstPageMondayTodo": [],
+  "tuesday": "Enter Date",
+  "firstPageTuesdayTodo": [],
+  "wednesday": "Enter Date",
+  "firstPageWednesdayTodo": [],
+  "thursday": "Enter Date",
+  "firstPageThursdayTodo": [],
+  "friday": "Enter Date",
+  "firstPageFridayTodo": [],
+  "saturday": "Enter Date",
+  "firstPageSaturdayTodo": []
+}
