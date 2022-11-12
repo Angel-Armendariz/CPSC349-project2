@@ -194,7 +194,7 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
-  color: inherit;
+  color: black;
   /* 1 */
   margin: 0;
   /* 2 */
@@ -805,6 +805,11 @@ video {
 .text-pink-500 {
   --tw-text-opacity: 1;
   color: rgb(236 72 153 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .opacity-75 {
