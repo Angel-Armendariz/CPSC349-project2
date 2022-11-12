@@ -2,7 +2,7 @@
 
 <main>
         <h1 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-            <span object key:name="@innerText" edit:name>
+            <span object key:name="@innerText" edit:name:without-remove>
                 {{default name "Click here to enter your name"}}
             </span>'s Calendar
         </h1>
@@ -14,11 +14,11 @@
 
         <div class="flex justify-center">
             <h2 class="flex self-center text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-                <span object key:month="@innerText" edit:month>
+                <span object key:month="@innerText" edit:month:>
                         {{default month "Enter Month"}}
                 </span>, &nbsp;
 
-                <span object key:years="@innerText" edit:years>
+                <span object key:years="@innerText" edit:years:without-remove>
                         {{default years "Enter year"}}
                 </span>&nbsp; |  &nbsp; page 5
             </h2>
@@ -55,7 +55,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifthsunday="@innerText" edit:fifthsunday>{{default fifthsunday "Enter Date"}}</span>
+                    <span object key:fifthsunday="@innerText" edit:fifthsunday:without-remove>{{default fifthsunday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -91,7 +91,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifthmonday="@innerText" edit:fifthmonday>{{default fifthmonday "Enter Date"}}</span>
+                    <span object key:fifthmonday="@innerText" edit:fifthmonday:without-remove>{{default fifthmonday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -128,7 +128,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifthtuesday="@innerText" edit:fifthtuesday>{{default fifthtuesday "Enter Date"}}</span>
+                    <span object key:fifthtuesday="@innerText" edit:fifthtuesday:without-remove>{{default fifthtuesday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -162,7 +162,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifthwednesday="@innerText" edit:fifthwednesday>{{default fifthwednesday "Enter Date"}}</span>
+                    <span object key:fifthwednesday="@innerText" edit:fifthwednesday:without-remove>{{default fifthwednesday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -197,7 +197,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifththursday="@innerText" edit:fifththursday>{{default fifththursday "Enter Date"}}</span>
+                    <span object key:fifththursday="@innerText" edit:fifththursday:without-remove>{{default fifththursday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -234,7 +234,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifthfriday="@innerText" edit:fifthfriday>{{default fifthfriday "Enter Date"}}</span>
+                    <span object key:fifthfriday="@innerText" edit:fifthfriday:without-remove>{{default fifthfriday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -268,7 +268,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifthsaturday="@innerText" edit:fifthsaturday>{{default fifthsaturday "Enter Date"}}</span>
+                    <span object key:fifthsaturday="@innerText" edit:fifthsaturday:without-remove>{{default fifthsaturday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
