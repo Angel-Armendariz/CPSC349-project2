@@ -2,7 +2,7 @@
 
 <main>
         <h1 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-            <span object key:name="@innerText" edit:name>
+            <span object key:name="@innerText" edit:name:without-remove>
                 {{default name "Click here to enter your name"}}
             </span>'s Calendar
         </h1>
@@ -14,11 +14,11 @@
 
         <div class="flex justify-center">
             <h2 class="flex self-center text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-                <span object key:month="@innerText" edit:month>
+                <span object key:month="@innerText" edit:month:without-remove>
                         {{default month "Enter Month"}}
                 </span>, &nbsp;
 
-                <span object key:years="@innerText" edit:years>
+                <span object key:years="@innerText" edit:years:without-remove>
                         {{default years "Enter year"}}
                 </span>&nbsp; |  &nbsp; page 4
             </h2>
@@ -58,7 +58,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forthsunday="@innerText" edit:forthsunday>{{default forthsunday "Enter Date"}}</span>
+                    <span object key:forthsunday="@innerText" edit:forthsunday:without-remove>{{default forthsunday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -94,7 +94,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forthmonday="@innerText" edit:forthmonday>{{default forthmonday "Enter Date"}}</span>
+                    <span object key:forthmonday="@innerText" edit:forthmonday:without-remove>{{default forthmonday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -131,7 +131,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forthtuesday="@innerText" edit:forthtuesday>{{default forthtuesday "Enter Date"}}</span>
+                    <span object key:forthtuesday="@innerText" edit:forthtuesday:without-remove>{{default forthtuesday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -165,7 +165,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forthwednesday="@innerText" edit:forthwednesday>{{default forthwednesday "Enter Date"}}</span>
+                    <span object key:forthwednesday="@innerText" edit:forthwednesday:without-remove>{{default forthwednesday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -200,7 +200,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forththursday="@innerText" edit:forththursday>{{default forththursday "Enter Date"}}</span>
+                    <span object key:forththursday="@innerText" edit:forththursday:without-remove>{{default forththursday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -237,7 +237,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forthfriday="@innerText" edit:forthfriday>{{default forthfriday "Enter Date"}}</span>
+                    <span object key:forthfriday="@innerText" edit:forthfriday:without-remove>{{default forthfriday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -271,7 +271,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forthsaturday="@innerText" edit:forthsaturday>{{default forthsaturday "Enter Date"}}</span>
+                    <span object key:forthsaturday="@innerText" edit:forthsaturday:without-remove>{{default forthsaturday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
