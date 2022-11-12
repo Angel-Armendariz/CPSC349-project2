@@ -15,7 +15,18 @@
 
   <link rel="stylesheet" type="text/css" href="/assets/css/_remake.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+  <style>
+    body{
+    background: #fff;
+    color: #222;
+    }
 
+    body[key\:dark-mode="true"] {
+      background: #222;
+      color: #fff;
+
+    }
+  </style>
 
 </head>
 
@@ -23,9 +34,8 @@
 
 <!-- =============================================================================================-->
 
-<body class="bg-gray-100">
 
-
+<body object key:dark-mode="true" class="bg-gray-100">
 <!-- ===========================header=============================================================-->
 <header>
 
@@ -92,6 +102,20 @@
                     shadow-cyan-500/50
                     rounded-md
                     p-3" href="/user/logout">Logout</a>
+
+          <button {{toggle:dark-mode}} class="transition
+                    ease-in-out
+                    delay-150
+                    hover:-translate-y-1
+                    hover:scale-110
+                    hover:bg-indigo-500
+                    duration-300
+                    text-white
+                    bg-cyan-500
+                    shadow-lg
+                    shadow-cyan-500/50
+                    rounded-md
+                    p-3">Light/Dark</button>
 
         </div>
     </nav>
@@ -161,6 +185,21 @@
                     rounded-md
                     p-3
                     nav__button" href="/login">Log in</a>
+
+          <button toggle:dark-mode="false" class="transition point-events-auto
+                    ease-in-out
+                    delay-150
+                    hover:-translate-y-1
+                    hover:scale-110
+                    hover:bg-indigo-500
+                    duration-300
+                    text-white
+                    bg-cyan-500
+                    shadow-lg
+                    shadow-cyan-500/50
+                    rounded-md
+                    p-3">Light/Dark</button>
+
         </div>
 
 </nav>
@@ -282,6 +321,6 @@
 </footer>
 <!--===================================================================================================================-->
 
-  </body>
+</body>
 
 </html>
