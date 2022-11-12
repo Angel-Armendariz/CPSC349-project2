@@ -1,8 +1,8 @@
 
 
 <main>
-        <h1 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-            <span object key:name="@innerText" edit:name>
+        <h1 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">
+            <span object key:name="@innerText" edit:name:without-remove>
                 {{default name "Click here to enter your name"}}
             </span>'s Calendar
         </h1>
@@ -13,12 +13,12 @@
 
 
         <div class="flex justify-center">
-            <h2 class="flex self-center text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-                <span object key:month="@innerText" edit:month>
+            <h2 class="flex self-center text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">
+                <span object key:month="@innerText" edit:month:without-remove>
                         {{default month "Enter Month"}}
                 </span>, &nbsp;
 
-                <span object key:years="@innerText" edit:years>
+                <span object key:years="@innerText" edit:years:without-remove>
                         {{default years "Enter year"}}
                 </span>&nbsp; |  &nbsp; page 4
             </h2>
@@ -53,12 +53,12 @@
 
 	        <div class="flex flex-col shadow-lg bg-white w-60 p5">
 
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Sunday &nbsp;|
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Sunday &nbsp;|
 
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forthsunday="@innerText" edit:forthsunday>{{default forthsunday "Enter Date"}}</span>
+                    <span object key:forthsunday="@innerText" edit:forthsunday:without-remove>{{default forthsunday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -68,7 +68,7 @@
                  <ul  array key="forthPageSundayTodo" sortable>
 
                     {{#for todo in forthPageSundayTodo}}
-                     <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                     <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
                     object
                     key:text="@innerText"
                     edit:text>
@@ -77,7 +77,7 @@
                     {{/for}}
 
                 </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
 
             </div>
 
@@ -89,12 +89,12 @@
 
             <div class="flex flex-col shadow-lg bg-white w-60 p5">
 
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Monday &nbsp;|
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Monday &nbsp;|
 
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forthmonday="@innerText" edit:forthmonday>{{default forthmonday "Enter Date"}}</span>
+                    <span object key:forthmonday="@innerText" edit:forthmonday:without-remove>{{default forthmonday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -105,7 +105,7 @@
                  <ul  array key="forthPageMondayTodo" sortable>
 
                     {{#for todo in forthPageMondayTodo}}
-                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
                     object
                     key:text="@innerText"
                     edit:text>
@@ -114,7 +114,7 @@
                  {{/for}}
 
                 </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
 
             </div>
 
@@ -126,12 +126,12 @@
 
             <div class="flex flex-col shadow-lg bg-white w-60 p5">
 
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Tuesday &nbsp;|
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Tuesday &nbsp;|
 
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forthtuesday="@innerText" edit:forthtuesday>{{default forthtuesday "Enter Date"}}</span>
+                    <span object key:forthtuesday="@innerText" edit:forthtuesday:without-remove>{{default forthtuesday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -140,7 +140,7 @@
                 <ul  array key="forthPageTuesdayTodo" sortable>
 
                     {{#for todo in forthPageTuesdayTodo}}
-                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
                     object
                     key:text="@innerText"
                     edit:text>
@@ -149,7 +149,7 @@
                     {{/for}}
 
                  </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
 
             </div>
 
@@ -160,12 +160,12 @@
 
             <div class="flex flex-col shadow-lg bg-white w-60 p5">
 
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Wednesday &nbsp;|
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Wednesday &nbsp;|
 
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forthwednesday="@innerText" edit:forthwednesday>{{default forthwednesday "Enter Date"}}</span>
+                    <span object key:forthwednesday="@innerText" edit:forthwednesday:without-remove>{{default forthwednesday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -174,7 +174,7 @@
                 <ul  array key="forthPageWednesdayTodo" sortable>
 
                     {{#for todo in forthPageWednesdayTodo}}
-                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
                         object
                         key:text="@innerText"
                         edit:text>
@@ -183,7 +183,7 @@
                     {{/for}}
 
                 </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
 
             </div>
 
@@ -195,12 +195,12 @@
 
             <div class="flex flex-col shadow-lg bg-white w-60 p5">
 
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Thursday &nbsp;|
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Thursday &nbsp;|
 
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forththursday="@innerText" edit:forththursday>{{default forththursday "Enter Date"}}</span>
+                    <span object key:forththursday="@innerText" edit:forththursday:without-remove>{{default forththursday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -209,7 +209,7 @@
                 <ul  array key="forthPageThursdayTodo" sortable>
 
                     {{#for todo in forthPageThursdayTodo}}
-                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
                         object
                         key:text="@innerText"
                         edit:text>
@@ -218,7 +218,7 @@
                     {{/for}}
 
                 </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
 
             </div>
 
@@ -232,12 +232,12 @@
 
             <div class="flex flex-col shadow-lg bg-white w-60 p5">
 
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Friday &nbsp;|
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Friday &nbsp;|
 
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forthfriday="@innerText" edit:forthfriday>{{default forthfriday "Enter Date"}}</span>
+                    <span object key:forthfriday="@innerText" edit:forthfriday:without-remove>{{default forthfriday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -246,7 +246,7 @@
                 <ul  array key="forthPageFridayTodo" sortable>
 
                     {{#for todo in forthPageFridayTodo}}
-                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
                     object
                     key:text="@innerText"
                     edit:text>
@@ -254,7 +254,7 @@
                     </li>
                     {{/for}}
                 </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
 
             </div>
 
@@ -266,12 +266,12 @@
 
             <div class="flex flex-col shadow-lg bg-white w-60 p5">
 
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Saturday &nbsp;|
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Saturday &nbsp;|
 
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:forthsaturday="@innerText" edit:forthsaturday>{{default forthsaturday "Enter Date"}}</span>
+                    <span object key:forthsaturday="@innerText" edit:forthsaturday:without-remove>{{default forthsaturday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -280,7 +280,7 @@
                 <ul  array key="forthPageSaturdayTodo" sortable>
 
                     {{#for todo in forthPageSaturdayTodo}}
-                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
                     object
                     key:text="@innerText"
                     edit:text>
@@ -289,7 +289,7 @@
                     {{/for}}
 
                 </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
 
             </div>
 
