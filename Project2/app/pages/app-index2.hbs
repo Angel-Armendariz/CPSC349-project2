@@ -2,7 +2,7 @@
 
 <main>
         <h1 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-            <span object key:name="@innerText" edit:name>
+            <span object key:name="@innerText" edit:name:without-remove>
                 {{default name "Click here to enter your name"}}
             </span>'s Calendar
         </h1>
@@ -14,11 +14,11 @@
 
         <div class="flex justify-center">
             <h2 class="flex self-center text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-                <span object key:month="@innerText" edit:month>
+                <span object key:month="@innerText" edit:month:without-remove>
                         {{default month "Enter Month"}}
                 </span>, &nbsp;
 
-                <span object key:years="@innerText" edit:years>
+                <span object key:years="@innerText" edit:years:without-remove>
                         {{default years "Enter year"}}
                 </span>&nbsp; |  &nbsp; page 3
             </h2>
@@ -58,7 +58,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:sundaythird="@innerText" edit:sundaythird>{{default sundaythird "Enter Date"}}</span>
+                    <span object key:sundaythird="@innerText" edit:sundaythird:without-remove>{{default sundaythird "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -94,7 +94,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:mondaythird="@innerText" edit:mondaythird>{{default mondaythird "Enter Date"}}</span>
+                    <span object key:mondaythird="@innerText" edit:mondaythird:without-remove>{{default mondaythird "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -131,7 +131,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:tuesdaythird="@innerText" edit:tuesdaythird>{{default tuesdaythird "Enter Date"}}</span>
+                    <span object key:tuesdaythird="@innerText" edit:tuesdaythird:without-remove>{{default tuesdaythird "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -165,7 +165,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:wednesdaythird="@innerText" edit:wednesdaythird>{{default wednesdaythird "Enter Date"}}</span>
+                    <span object key:wednesdaythird="@innerText" edit:wednesdaythird:without-remove>{{default wednesdaythird "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -200,7 +200,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:thursdaythird="@innerText" edit:thursdaythird>{{default thursdaythird "Enter Date"}}</span>
+                    <span object key:thursdaythird="@innerText" edit:thursdaythird:without-remove>{{default thursdaythird "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -237,7 +237,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fridaythird="@innerText" edit:fridaythird>{{default fridaythird "Enter Date"}}</span>
+                    <span object key:fridaythird="@innerText" edit:fridaythird:without-remove>{{default fridaythird "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
@@ -271,7 +271,7 @@
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:saturdaythird="@innerText" edit:saturdaythird>{{default saturdaythird "Enter Date"}}</span>
+                    <span object key:saturdaythird="@innerText" edit:saturdaythird:without-remove>{{default saturdaythird "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
