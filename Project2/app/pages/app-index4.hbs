@@ -48,25 +48,25 @@
 
 
 
-	        <div class="flex flex-col shadow-lg bg-white w-60 p5">
-
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Sunday &nbsp;|
-
+	        <div class="flex flex-col shadow-lg w-60 p5">
+        
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Sunday &nbsp;|
+                     
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifthsunday="@innerText" edit:fifthsunday:without-remove>{{default fifthsunday "Enter Date"}}</span>
+                    <span object key:firstpagesunday="@innerText" edit:firstpagesunday:without-remove>{{default firstpagesunday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
                 </h3>
+               
 
-
-                 <ul  array key="fifthPageSundayTodo" sortable>
-
-                    {{#for todo in fifthPageSundayTodo}}
-                     <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
-                    object
+                 <ul  array key="firstPageSundayTodo" sortable>
+                
+                    {{#for todo in firstPageSundayTodo}}
+                     <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                    object 
                     key:text="@innerText"
                     edit:text>
                     {{default todo.text "New todo item"}}
@@ -74,8 +74,8 @@
                     {{/for}}
 
                 </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
-
+                <button new:todo class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+                      
             </div>
 
 
@@ -84,35 +84,35 @@
 
 
 
-            <div class="flex flex-col shadow-lg bg-white w-60 p5">
-
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Monday &nbsp;|
-
+            <div class="flex flex-col shadow-lg w-60 p5">
+        
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Monday &nbsp;|
+     
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifthmonday="@innerText" edit:fifthmonday:without-remove>{{default fifthmonday "Enter Date"}}</span>
+                    <span object key:firstpagemonday="@innerText" edit:firstpagemonday:without-remove>{{default firstpagemonday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
-                </h3>
+                </h3>               
 
 
 
-                 <ul  array key="fifthPageMondayTodo" sortable>
-
-                    {{#for todo in fifthPageMondayTodo}}
-                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
-                    object
+                 <ul  array key="firstPageMondayTodo" sortable>
+        
+                    {{#for todo in firstPageMondayTodo}}
+                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                    object 
                     key:text="@innerText"
                     edit:text>
                     {{default todo.text "New todo item"}}
                     </li>
                  {{/for}}
-
+    
                 </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
-
+                <button new:todo class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+   
             </div>
 
 
@@ -121,33 +121,33 @@
 
 
 
-            <div class="flex flex-col shadow-lg bg-white w-60 p5">
-
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Tuesday &nbsp;|
-
+            <div class="flex flex-col shadow-lg w-60 p5">
+        
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Tuesday &nbsp;|
+    
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifthtuesday="@innerText" edit:fifthtuesday:without-remove>{{default fifthtuesday "Enter Date"}}</span>
+                    <span object key:firstpagetuesday="@innerText" edit:firstpagetuesday:without-remove>{{default firstpagetuesday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
-                </h3>
+                </h3>               
 
-                <ul  array key="fifthPageTuesdayTodo" sortable>
-
-                    {{#for todo in fifthPageTuesdayTodo}}
-                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
-                    object
+                <ul  array key="firstPageTuesdayTodo" sortable>
+        
+                    {{#for todo in firstPageTuesdayTodo}}
+                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                    object 
                     key:text="@innerText"
                     edit:text>
                     {{default todo.text "New todo item"}}
                     </li>
                     {{/for}}
-
+   
                  </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
-
+                <button new:todo class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+   
             </div>
 
 
@@ -155,33 +155,33 @@
 
 
 
-            <div class="flex flex-col shadow-lg bg-white w-60 p5">
-
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Wednesday &nbsp;|
+            <div class="flex flex-col shadow-lg w-60 p5">
+        
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Wednesday &nbsp;|
 
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifthwednesday="@innerText" edit:fifthwednesday:without-remove>{{default fifthwednesday "Enter Date"}}</span>
+                    <span object key:firstpagewednesday="@innerText" edit:firstpagewednesday:without-remove>{{default firstpagewednesday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
-                </h3>
+                </h3>               
 
-                <ul  array key="fifthPageWednesdayTodo" sortable>
-
-                    {{#for todo in fifthPageWednesdayTodo}}
-                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
-                        object
+                <ul  array key="firstPageWednesdayTodo" sortable>
+        
+                    {{#for todo in firstPageWednesdayTodo}}
+                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                        object 
                         key:text="@innerText"
                         edit:text>
                         {{default todo.text "New todo item"}}
                     </li>
                     {{/for}}
-
+    
                 </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
-
+                <button new:todo class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+   
             </div>
 
 
@@ -190,33 +190,33 @@
 
 
 
-            <div class="flex flex-col shadow-lg bg-white w-60 p5">
-
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Thursday &nbsp;|
+            <div class="flex flex-col shadow-lg w-60 p5">
+        
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Thursday &nbsp;|
 
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifththursday="@innerText" edit:fifththursday:without-remove>{{default fifththursday "Enter Date"}}</span>
+                    <span object key:firstpagethursday="@innerText" edit:firstpagethursday:without-remove>{{default firstpagethursday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
-                </h3>
+                </h3>               
 
-                <ul  array key="fifthPageThursdayTodo" sortable>
-
-                    {{#for todo in fifthPageThursdayTodo}}
-                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
-                        object
+                <ul  array key="firstPageThursdayTodo" sortable>
+        
+                    {{#for todo in firstPageThursdayTodo}}
+                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                        object 
                         key:text="@innerText"
                         edit:text>
                         {{default todo.text "New todo item"}}
                     </li>
                     {{/for}}
-
+    
                 </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
-
+                <button new:todo class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+   
             </div>
 
 
@@ -227,32 +227,32 @@
 
 
 
-            <div class="flex flex-col shadow-lg bg-white w-60 p5">
-
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Friday &nbsp;|
+            <div class="flex flex-col shadow-lg w-60 p5">
+        
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Friday &nbsp;|
 
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifthfriday="@innerText" edit:fifthfriday:without-remove>{{default fifthfriday "Enter Date"}}</span>
+                    <span object key:firstpagefriday="@innerText" edit:firstpagefriday:without-remove>{{default firstpagefriday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
-                </h3>
+                </h3>               
 
-                <ul  array key="fifthPageFridayTodo" sortable>
-
-                    {{#for todo in fifthPageFridayTodo}}
-                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
-                    object
+                <ul  array key="firstPageFridayTodo" sortable>
+        
+                    {{#for todo in firstPageFridayTodo}}
+                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                    object 
                     key:text="@innerText"
                     edit:text>
                     {{default todo.text "New todo item"}}
                     </li>
                     {{/for}}
                 </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
-
+                <button new:todo class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+   
             </div>
 
 
@@ -261,33 +261,33 @@
 
 
 
-            <div class="flex flex-col shadow-lg bg-white w-60 p5">
-
-                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">&nbsp; Saturday &nbsp;|
+            <div class="flex flex-col shadow-lg w-60 p5">
+        
+                <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Saturday &nbsp;|
 
                     <span>&nbsp;</span>
                     <span>{{month}}</span>
                     <span>&nbsp;</span>
-                    <span object key:fifthsaturday="@innerText" edit:fifthsaturday:without-remove>{{default fifthsaturday "Enter Date"}}</span>
+                    <span object key:firstpagesaturday="@innerText" edit:firstpagesaturday:without-remove>{{default firstpagesaturday "Enter Date"}}</span>
                     <span>,&nbsp;</span>
                     <span>{{years}}</span>
 
-                </h3>
+                </h3>      
 
-                <ul  array key="fifthPageSaturdayTodo" sortable>
-
-                    {{#for todo in fifthPageSaturdayTodo}}
-                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4"
-                    object
+                <ul  array key="firstPageSaturdayTodo" sortable>
+        
+                    {{#for todo in firstPageSaturdayTodo}}
+                    <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"
+                    object 
                     key:text="@innerText"
                     edit:text>
                     {{default todo.text "New todo item"}}
                     </li>
                     {{/for}}
-
+    
                 </ul>
-                <button new:todo class="container mx-auto text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md p-3 m-4">Add Todo</button>
-
+                <button new:todo class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+   
             </div>
 
 
