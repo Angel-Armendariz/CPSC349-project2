@@ -5,3 +5,5 @@ For this project we will be creating a weekly calendar that is structured and st
 3.Login page 
 4. Main application page(in this case, the weekly planner)
 5. About us page 
+Team members: Angel Armendariz, Mohammed Ali, William Ye, and Jacky Cai. 
+Our Mockup is located under /Project2/app/assets/css/mockup with all our static html files 
