@@ -1,26 +1,47 @@
 {
-  "darkMode": "true",
+  "darkMode": "false",
   "name": "Angel ",
-  "month": "Enter Month",
-  "years": "Enter year",
-  "firstpagesunday": "Enter Date",
+  "month": "November",
+  "years": "2022",
+  "firstpagesunday": "1",
   "firstPageSundayTodo": [
+    {
+      "text": "take out trash"
+    },
     {
       "text": "New todo item"
     }
   ],
-  "firstpagemonday": "Enter Date",
-  "firstPageMondayTodo": [],
-  "firstpagetuesday": "Enter Date",
+  "firstpagemonday": "2",
+  "firstPageMondayTodo": [
+    {
+      "text": "New todo item"
+    },
+    {
+      "text": "New todo item"
+    }
+  ],
+  "firstpagetuesday": "3",
   "firstPageTuesdayTodo": [
     {
       "text": "New todo item"
+    },
+    {
+      "text": "New todo item"
     }
   ],
-  "firstpagewednesday": "Enter Date",
-  "firstPageWednesdayTodo": [],
+  "firstpagewednesday": "4",
+  "firstPageWednesdayTodo": [
+    {
+      "text": "New todo item"
+    }
+  ],
   "firstpagethursday": "Enter Date",
-  "firstPageThursdayTodo": [],
+  "firstPageThursdayTodo": [
+    {
+      "text": "New todo item"
+    }
+  ],
   "firstpagefriday": "Enter Date",
   "firstPageFridayTodo": [],
   "firstpagesaturday": "Enter Date",
