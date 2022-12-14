@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- ##################################### Head #########################################-->
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Calendar App</title>
+
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <link rel="stylesheet" type="text/css" href="./_remake.css">
+</head>
+
+
+
+<!-- ##################################### Body #########################################-->
+
+<body class="bg-gray-100">
+
+
+<!-- ##################################### Nav Bar #########################################-->
+<header>
+
+    <nav class="p-6">
+
+
+      <div class="flex flex-wrap justify-around sticky top-0 pt-1">
+
+        <a class="transition 
+                  ease-in-out 
+                  delay-150 
+                  hover:-translate-y-1 
+                  hover:scale-110 
+                  hover:bg-indigo-500 
+                  duration-300 
+                  text-black
+                  bg-cyan-500 
+                  shadow-lg 
+                  shadow-cyan-500/50 
+                  p-3
+                  rounded-md nav__button" href="./landingPage.html">Home</a>
+
+                  <a class="transition 
+                  ease-in-out 
+                  delay-150 
+                  hover:-translate-y-1 
+                  hover:scale-110 
+                  hover:bg-indigo-500 
+                  duration-300 
+                  text-black 
+                  bg-cyan-500 
+                  shadow-lg 
+                  shadow-cyan-500/50 
+                  p-3
+                  rounded-md nav__button" href="./app-index.html">Calendar</a>  
+
+          <a class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-1
+                    hover:scale-110 
+                    hover:bg-indigo-500 
+                    duration-300 
+                    text-black 
+                    bg-cyan-500 
+                    shadow-lg 
+                    shadow-cyan-500/50 
+                    p-3
+                    rounded-md" href="./aboutUs.html">About Us</a>
+
+          <a class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-1 
+                    hover:scale-110 
+                    hover:bg-indigo-500 
+                    duration-300 
+                    text-black 
+                    bg-cyan-500 
+                    shadow-lg 
+                    shadow-cyan-500/50 
+                    p-3
+                    rounded-md nav__button" href="./signUp.html">Sign Up</a>
+
+          <a class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-1 
+                    hover:scale-110 
+                    hover:bg-indigo-500 
+                    duration-300 
+                    text-black 
+                    bg-cyan-500 
+                    shadow-lg 
+                    shadow-cyan-500/50 
+                    rounded-md 
+                    p-3
+                    nav__button" href="./login.html">Log in</a>
+
+        </div>
+        <h1 class=" container 
+                    mx-auto
+                    text-black 
+                    text-xl
+                    text-center
+                    bg-indigo-500    
+                    shadow-lg 
+                    shadow-indigo-500
+                    p-3
+                    rounded-md m-4">Welcome to the Calendar</h1>
+    </nav>
+
+  </header>
+
+<hr>
+
+
+<!-- ##################################### Main #########################################-->
+<main>
+  <h1 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+    <span >  
+        <p>Click here to enter your name </p> 
+    </span>'s Calendar
+</h1>
+
+
+
+<div class="flex flex-col p-6">
+
+
+<div class="flex justify-center">
+    <h2 class="flex self-center text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+        <span>  
+          <p>Enter Month</p>
+        </span>, &nbsp;
+
+        <span>  
+          <p>Enter Year</p>
+        </span>&nbsp; |  &nbsp; page 1
+    </h2>
+
+</div>
+
+
+
+<div class="flex space-x-6 self-end">
+
+     <a class="flex self-end transition ease-in-out delay-150 duration-300 text-white bg-gray-500 shadow-lg shadow-indigo-500/50 p-3
+               hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500" href="/{{currentUser.details.username}}/app-index1">NEXT</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="items-end flex flex-wrap justify-center space-x-6 space-y-6 h-auto w-screen">
+
+
+
+
+
+
+
+  <div class="flex flex-col shadow-lg w-60 p5">
+
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Sunday &nbsp;|
+             
+            <span>&nbsp;</span>
+            <span><p>month</p></span>
+            <span>&nbsp;</span>
+            <span><p>Enter Date</p></span>
+            <span>,&nbsp;</span>
+            <span><p>Years</p></span>
+
+        </h3>
+       
+
+         <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <p>New Todo</p>
+            </li>
+
+        </ul>
+        <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+              
+    </div>
+
+
+
+
+
+
+
+    <div class="flex flex-col shadow-lg w-60 p5">
+
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Monday &nbsp;|
+
+            <span>&nbsp;</span>
+            <span><p>month</p></span>
+            <span>&nbsp;</span>
+            <span><p>Enter Date</p>/span>
+            <span>,&nbsp;</span>
+            <span><p>Years</p></span>
+
+        </h3>               
+
+
+
+         <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <p>New Todo</p>
+            </li>
+
+        </ul>
+        <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="flex flex-col shadow-lg w-60 p5">
+
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Tuesday &nbsp;|
+
+            <span>&nbsp;</span>
+            <span>month</span>
+            <span>&nbsp;</span>
+            <span>Enter Date</span>
+            <span>,&nbsp;</span>
+            <span>years</span>
+
+        </h3>               
+
+        <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <p>New Todo</p>
+            </li>
+
+         </ul>
+        <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+
+    </div>
+
+
+
+
+
+
+    <div class="flex flex-col shadow-lg w-60 p5">
+
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Wednesday &nbsp;|
+
+            <span>&nbsp;</span>
+            <span>month</span>
+            <span>&nbsp;</span>
+            <span>Enter Date</span>
+            <span>,&nbsp;</span>
+            <span>years</span>
+
+        </h3>               
+
+        <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+                <p>New Todo</p>
+            </li>
+
+        </ul>
+        <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="flex flex-col shadow-lg w-60 p5">
+
+      <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Thursday &nbsp;|
+
+          <span>&nbsp;</span>
+          <span>month</span>
+          <span>&nbsp;</span>
+          <span>Enter Date</span>
+          <span>,&nbsp;</span>
+          <span>years</span>
+
+      </h3>               
+
+      <ul>
+          <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <p>New Todo</p>
+          </li>
+
+      </ul>
+      <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="flex flex-col shadow-lg w-60 p5">
+
+    <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Friday &nbsp;|
+
+        <span>&nbsp;</span>
+        <span>month</span>
+        <span>&nbsp;</span>
+        <span>Enter Date</span>
+        <span>,&nbsp;</span>
+        <span>years</span>
+
+    </h3>               
+
+    <ul>
+        <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+            <p>New Todo</p>
+        </li>
+
+    </ul>
+    <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+
+</div>
+
+
+
+
+
+
+
+<div class="flex flex-col shadow-lg w-60 p5">
+
+  <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Saturday &nbsp;|
+
+      <span>&nbsp;</span>
+      <span>month</span>
+      <span>&nbsp;</span>
+      <span>Enter Date</span>
+      <span>,&nbsp;</span>
+      <span>years</span>
+
+  </h3>               
+
+  <ul>
+      <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+          <p>New Todo</p>
+      </li>
+
+  </ul>
+  <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+</main>
+<!-- ##################################### Footer #########################################-->
+<footer>
+  <nav class="flex justify-center p-10">
+
+    <div class="">
+    
+    |&nbsp;  <a class="hover:text-blue-300 nav__button" href="./landingPage.html">Home</a>  	&nbsp;|	 	&nbsp;
+    
+            <a class="hover:text-blue-300" href="./app-index.html">Calendar</a> 	&nbsp;| 	&nbsp;
+    
+            <a class="hover:text-blue-300" href="./aboutUs.html">About Us</a> 	&nbsp;| 	&nbsp;
+    
+            <a class="hover:text-blue-300" href="./signUp.html">Sign Up</a> 	&nbsp;| 	&nbsp;
+    
+            <a class="hover:text-blue-300 nav__button" href="./login.html">Log in</a> 	&nbsp;|
+    </div>
+    </nav>
+    <span>&copy;Copyright 2022</span>
+</footer>
+</body>
+</html>
