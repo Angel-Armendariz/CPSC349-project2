@@ -4,9 +4,11 @@
   "description": "For this project we will be creating a weekly calendar that is structured and styled with HTML and Tailwind CSS and JavaScript.  1.The landing page  2.Account creation page  3.Login page  4. Main application page(in this case, the weekly planner) 5. About us page  Team members: Angel Armendariz, William Ye. Our Mockup is located under /Project2/app/assets/css/mockup with all our static html files",
   "main": "index.js",
   "scripts": {
-    "dev": "browser-sync start --proxy http://localhost:5500/src/app-index.html --files ./src/index.html",
-    "tailwind": "tailwindcss -i ./src/input.css -o ./src/main.css --watch",
-    "start": "npm-run-all --parallel dev tailwind"
+    "dev": "browser-sync http://localhost:8090 --files 'pb_public/*'",
+    "tailwind": "tailwindcss -i ./pb_public/input.css -o ./pb_public/main.css --watch",
+    "pocketbase": "./pocketbase serve",
+    "esbuild": "esbuild src/app.jsx --outfile=pb_public/app.js --watch",
+    "start": "npm-run-all --parallel dev pocketbase esbuild tailwind"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
   "homepage": "https://github.com/williamye51/CPSC349-project4#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "esbuild": "0.16.6"
   }
 }
