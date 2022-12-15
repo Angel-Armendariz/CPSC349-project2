@@ -118,48 +118,19 @@
   </header>
 
 <hr>
-
-
 <!-- ##################################### Main #########################################-->
 <main>
   <h1 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-    <span >  
-        <p>Click here to enter your name </p> 
-    </span>'s Calendar
+    Enter Your Name:
+    <input type="text" id = "title"></input>
+    <span>  
+        <!--Make a button to enter your name-->
+    </span><p id = "user"></p>
 </h1>
 
 
 
 <div class="flex flex-col p-6">
-
-
-<div class="flex justify-center">
-    <h2 class="flex self-center text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-        <span>  
-          <p>Enter Month</p>
-        </span>, &nbsp;
-
-        <span>  
-          <p>Enter Year</p>
-        </span>&nbsp; |  &nbsp; page 1
-    </h2>
-
-</div>
-
-
-
-<div class="flex space-x-6 self-end">
-
-     <a class="flex self-end transition ease-in-out delay-150 duration-300 text-white bg-gray-500 shadow-lg shadow-indigo-500/50 p-3
-               hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500" href="./app-index.html">NEXT</a>
-
-</div>
-
-
-
-
-
-
 
 <div class="items-end flex flex-wrap justify-center space-x-6 space-y-6 h-auto w-screen">
 
@@ -169,28 +140,18 @@
 
 
 
-  <div class="flex flex-col shadow-lg w-60 p5">
+    <div class="flex flex-col shadow-lg w-60 p5">
 
-        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Sunday &nbsp;|
-             
-            <span>&nbsp;</span>
-            <span><p>month</p></span>
-            <span>&nbsp;</span>
-            <span><p>Enter Date</p></span>
-            <span>,&nbsp;</span>
-            <span><p>Years</p></span>
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Sunday</h3>               
 
-        </h3>
-       
-
-         <ul>
+        <ul>
             <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
               <p>New Todo</p>
             </li>
 
-        </ul>
-        <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
-              
+         </ul>
+        <button id = "TodoMonday" class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+
     </div>
 
 
@@ -201,25 +162,14 @@
 
     <div class="flex flex-col shadow-lg w-60 p5">
 
-        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Monday &nbsp;|
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Monday</h3>               
 
-            <span>&nbsp;</span>
-            <span><p>month</p></span>
-            <span>&nbsp;</span>
-            <span><p>Enter Date</p>/span>
-            <span>,&nbsp;</span>
-            <span><p>Years</p></span>
-
-        </h3>               
-
-
-
-         <ul>
+        <ul>
             <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
               <p>New Todo</p>
             </li>
 
-        </ul>
+         </ul>
         <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
 
     </div>
@@ -232,16 +182,7 @@
 
     <div class="flex flex-col shadow-lg w-60 p5">
 
-        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Tuesday &nbsp;|
-
-            <span>&nbsp;</span>
-            <span>month</span>
-            <span>&nbsp;</span>
-            <span>Enter Date</span>
-            <span>,&nbsp;</span>
-            <span>years</span>
-
-        </h3>               
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Tuesday</h3>               
 
         <ul>
             <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
@@ -260,23 +201,14 @@
 
     <div class="flex flex-col shadow-lg w-60 p5">
 
-        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Wednesday &nbsp;|
-
-            <span>&nbsp;</span>
-            <span>month</span>
-            <span>&nbsp;</span>
-            <span>Enter Date</span>
-            <span>,&nbsp;</span>
-            <span>years</span>
-
-        </h3>               
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Wednesday</h3>               
 
         <ul>
             <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-                <p>New Todo</p>
+              <p>New Todo</p>
             </li>
 
-        </ul>
+         </ul>
         <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
 
     </div>
@@ -289,28 +221,17 @@
 
     <div class="flex flex-col shadow-lg w-60 p5">
 
-      <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Thursday &nbsp;|
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Thursday</h3>               
 
-          <span>&nbsp;</span>
-          <span>month</span>
-          <span>&nbsp;</span>
-          <span>Enter Date</span>
-          <span>,&nbsp;</span>
-          <span>years</span>
-
-      </h3>               
-
-      <ul>
-          <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+        <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
               <p>New Todo</p>
-          </li>
+            </li>
 
-      </ul>
-      <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+         </ul>
+        <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
 
-  </div>
-
-
+    </div>
 
 
 
@@ -318,28 +239,21 @@
 
 
 
-  <div class="flex flex-col shadow-lg w-60 p5">
 
-    <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Friday &nbsp;|
 
-        <span>&nbsp;</span>
-        <span>month</span>
-        <span>&nbsp;</span>
-        <span>Enter Date</span>
-        <span>,&nbsp;</span>
-        <span>years</span>
+    <div class="flex flex-col shadow-lg w-60 p5">
 
-    </h3>               
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Friday</h3>               
 
-    <ul>
-        <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-            <p>New Todo</p>
-        </li>
+        <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <p>New Todo</p>
+            </li>
 
-    </ul>
-    <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+         </ul>
+        <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
 
-</div>
+    </div>
 
 
 
@@ -347,28 +261,19 @@
 
 
 
-<div class="flex flex-col shadow-lg w-60 p5">
+    <div class="flex flex-col shadow-lg w-60 p5">
 
-  <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">&nbsp; Saturday &nbsp;|
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Saturday</h3>               
 
-      <span>&nbsp;</span>
-      <span>month</span>
-      <span>&nbsp;</span>
-      <span>Enter Date</span>
-      <span>,&nbsp;</span>
-      <span>years</span>
+        <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <p>New Todo</p>
+            </li>
 
-  </h3>               
+         </ul>
+        <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
 
-  <ul>
-      <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-          <p>New Todo</p>
-      </li>
-
-  </ul>
-  <button class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
-
-</div>
+    </div>
 
 
 
@@ -399,5 +304,14 @@
     </nav>
     <span>&copy;Copyright 2022</span>
 </footer>
+<script type="application/javascript" crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script type="application/javascript" crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script
+      type="application/javascript"
+      defer
+      crossorigin
+      src="https://unpkg.com/pocketbase@0.8.3/dist/pocketbase.umd.js"
+    ></script>
+<script type ='module' src="app.js"></script>
 </body>
 </html>

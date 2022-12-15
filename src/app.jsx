@@ -7,6 +7,8 @@ const authData = await pb.admins.authWithPassword(USERNAME, PASSWORD)
 console.log(authData)
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
+//make variable for user's name in app-index.html
+const name = ReactDOM.createRoot(document.getElementById('name'))
 
 root.render(
   <React.StrictMode>
