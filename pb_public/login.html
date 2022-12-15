@@ -14,6 +14,11 @@
 
   <link rel="stylesheet" type="text/css" href="./main.css">
   <link rel="stylesheet" type="text/css" href="./input.css">
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js" defer></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" defer></script>
+  <script src="https://unpkg.com/pocketbase/dist/pocketbase.umd.js" defer></script>
+  <script type="module" src="app.js"></script>
 </head>
 
 
@@ -21,89 +26,26 @@
 <!-- ##################################### Body #########################################-->
 
 <body class="bg-gray-100">
-
+  
 
 <!-- ##################################### Nav Bar #########################################-->
 <header>
 
-    <nav class="p-6">
+    <nav class="p-6" id="navBar">
 
 
-      <div class="flex flex-wrap justify-around sticky top-0 pt-1">
+     
+        
+    </nav>
+    
+  </header>
 
-        <a class="transition 
-                  ease-in-out 
-                  delay-150 
-                  hover:-translate-y-1 
-                  hover:scale-110 
-                  hover:bg-indigo-500 
-                  duration-300 
-                  text-white
-                  bg-cyan-500 
-                  shadow-lg 
-                  shadow-cyan-500/50 
-                  p-3
-                  rounded-md nav__button" href="./index.html">Home</a>
+<hr>
 
-                  <a class="transition 
-                  ease-in-out 
-                  delay-150 
-                  hover:-translate-y-1 
-                  hover:scale-110 
-                  hover:bg-indigo-500 
-                  duration-300 
-                  text-white 
-                  bg-cyan-500 
-                  shadow-lg 
-                  shadow-cyan-500/50 
-                  p-3
-                  rounded-md nav__button" href="./app-index.html">Calendar</a>  
 
-          <a class="transition 
-                    ease-in-out 
-                    delay-150 
-                    hover:-translate-y-1
-                    hover:scale-110 
-                    hover:bg-indigo-500 
-                    duration-300 
-                    text-white 
-                    bg-cyan-500 
-                    shadow-lg 
-                    shadow-cyan-500/50 
-                    p-3
-                    rounded-md" href="./aboutUs.html">About Us</a>
-
-          <a class="transition 
-                    ease-in-out 
-                    delay-150 
-                    hover:-translate-y-1 
-                    hover:scale-110 
-                    hover:bg-indigo-500 
-                    duration-300 
-                    text-white 
-                    bg-cyan-500 
-                    shadow-lg 
-                    shadow-cyan-500/50 
-                    p-3
-                    rounded-md nav__button" href="./signUp.html">Sign Up</a>
-
-          <a class="transition 
-                    ease-in-out 
-                    delay-150 
-                    hover:-translate-y-1 
-                    hover:scale-110 
-                    hover:bg-indigo-500 
-                    duration-300 
-                    text-white 
-                    bg-cyan-500 
-                    shadow-lg 
-                    shadow-cyan-500/50 
-                    rounded-md 
-                    p-3
-                    nav__button" href="./login.html">Log in</a>
-
-        </div>
-        <h1 class=" container 
+<!-- ##################################### Main #########################################-->
+<main>
+  <h1 class=" container 
                     mx-auto
                     text-white 
                     text-xl
@@ -113,57 +55,16 @@
                     shadow-indigo-500
                     p-3
                     rounded-md m-4">Log In</h1>
-    </nav>
+  <br>
+  <div id="resultMessage"></div>
 
-  </header>
-
-<hr>
-
-
-<!-- ##################################### Main #########################################-->
-<main>
-  <form action="/user/login" method="post">
-
-    <div class="flex flex-col items-center space-y-6 border-8">
-    
-              <input type="text" name="username" placeholder="Username" required class="border-2 mt-6">
-    
-              <input type="password" name="password" placeholder="Password" required class="border-2">
-    
-              <button type="submit"
-            class="transition 
-                  ease-in-out 
-                  delay-150 
-                  hover:-translate-y-1 
-                  hover:scale-110 
-                  hover:bg-indigo-500 
-                  duration-300
-                  text-white
-                  text-center
-                  bg-cyan-500 
-                  shadow-sm 
-                  shadow-cyan-500
-                  p-3
-                  rounded-md m-4">Log in</button>
-    </div>
-  </form>
+  <div id="loginForm"></div>
 </main>
 <!-- ##################################### Footer #########################################-->
 <footer>
-  <nav class="flex justify-center p-10">
+  <nav class="flex justify-center p-10" id="footerNavBar">
 
-    <div class="">
     
-    |&nbsp;  <a class="hover:text-blue-300 nav__button" href="./landingPage.html">Home</a>  	&nbsp;|	 	&nbsp;
-    
-            <a class="hover:text-blue-300" href="./app-index.html">Calendar</a> 	&nbsp;| 	&nbsp;
-    
-            <a class="hover:text-blue-300" href="./aboutUs.html">About Us</a> 	&nbsp;| 	&nbsp;
-    
-            <a class="hover:text-blue-300" href="./signUp.html">Sign Up</a> 	&nbsp;| 	&nbsp;
-    
-            <a class="hover:text-blue-300 nav__button" href="./login.html">Log in</a> 	&nbsp;|
-    </div>
     </nav>
     <span>&copy;Copyright 2022</span>
 </footer>
