@@ -20,12 +20,20 @@ function addTodoSunday() {
   const newTodoul = document.createElement("ul");
   const newTodo = document.createElement("li");
   const newTodoInput = document.createElement("input");
+  const removeTodo = document.createElement("button");
   newTodoInput.className = "container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4";
   newTodoInput.setAttribute("type", "text");
   newTodoInput.setAttribute("placeholder", "New Todo");
+  removeTodo.className = "container mx-auto text-black text-center bg-red-500 shadow-lg shadow-red-500 rounded-md m-4";
+  removeTodo.innerHTML = "Remove Todo";
   TodoSunday.after(newTodoul);
   newTodoul.appendChild(newTodo);
+  newTodo.appendChild(removeTodo);
   newTodo.appendChild(newTodoInput);
+  removeTodo.addEventListener('click', removeTodoSunday);
+  function removeTodoSunday() {
+    newTodo.remove();
+  }
 }
 //adds a todo to the monday list
 TodoMonday.addEventListener('click', addTodoMonday);
@@ -33,12 +41,20 @@ function addTodoMonday() {
   const newTodoul = document.createElement("ul");
   const newTodo = document.createElement("li");
   const newTodoInput = document.createElement("input");
+  const removeTodo = document.createElement("button");
   newTodoInput.className = "container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4";
   newTodoInput.setAttribute("type", "text");
   newTodoInput.setAttribute("placeholder", "New Todo");
+  removeTodo.className = "container mx-auto text-black text-center bg-red-500 shadow-lg shadow-red-500 rounded-md m-4";
+  removeTodo.innerHTML = "Remove Todo";
   TodoMonday.after(newTodoul);
   newTodoul.appendChild(newTodo);
+  newTodo.appendChild(removeTodo);
   newTodo.appendChild(newTodoInput);
+  removeTodo.addEventListener('click', removeTodoMonday);
+  function removeTodoMonday() {
+    newTodo.remove();
+  }
 }
 
 //adds a todo to the tuesday list
@@ -47,12 +63,20 @@ function addTodoTuesday() {
   const newTodoul = document.createElement("ul");
   const newTodo = document.createElement("li");
   const newTodoInput = document.createElement("input");
+  const removeTodo = document.createElement("button");
   newTodoInput.className = "container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4";
   newTodoInput.setAttribute("type", "text");
   newTodoInput.setAttribute("placeholder", "New Todo");
+  removeTodo.className = "container mx-auto text-black text-center bg-red-500 shadow-lg shadow-red-500 rounded-md m-4";
+  removeTodo.innerHTML = "Remove Todo";
   TodoTuesday.after(newTodoul);
   newTodoul.appendChild(newTodo);
+  newTodo.appendChild(removeTodo);
   newTodo.appendChild(newTodoInput);
+  removeTodo.addEventListener('click', removeTodoTuesday);
+  function removeTodoTuesday() {
+    newTodo.remove();
+  }
 }
 
 //adds a todo to the wednesday list
@@ -62,12 +86,20 @@ function addTodoWednesday() {
   const newTodoul = document.createElement("ul");
   const newTodo = document.createElement("li");
   const newTodoInput = document.createElement("input");
+  const removeTodo = document.createElement("button");
   newTodoInput.className = "container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4";
   newTodoInput.setAttribute("type", "text");
   newTodoInput.setAttribute("placeholder", "New Todo");
+  removeTodo.className = "container mx-auto text-black text-center bg-red-500 shadow-lg shadow-red-500 rounded-md m-4";
+  removeTodo.innerHTML = "Remove Todo";
   TodoWednesday.after(newTodoul);
   newTodoul.appendChild(newTodo);
+  newTodo.appendChild(removeTodo);
   newTodo.appendChild(newTodoInput);
+  removeTodo.addEventListener('click', removeTodoWednesday);
+  function removeTodoWednesday() {
+    newTodo.remove();
+  }
 }
 
 //adds a todo to the thursday list
@@ -76,12 +108,20 @@ function addTodoThursday() {
   const newTodoul = document.createElement("ul");
   const newTodo = document.createElement("li");
   const newTodoInput = document.createElement("input");
+  const removeTodo = document.createElement("button");
   newTodoInput.className = "container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4";
   newTodoInput.setAttribute("type", "text");
   newTodoInput.setAttribute("placeholder", "New Todo");
+  removeTodo.className = "container mx-auto text-black text-center bg-red-500 shadow-lg shadow-red-500 rounded-md m-4";
+  removeTodo.innerHTML = "Remove Todo";
   TodoThursday.after(newTodoul);
   newTodoul.appendChild(newTodo);
+  newTodo.appendChild(removeTodo);
   newTodo.appendChild(newTodoInput);
+  removeTodo.addEventListener('click', removeTodoThursday);
+  function removeTodoThursday() {
+    newTodo.remove();
+  }
 }
 
 //adds a todo to the friday list
@@ -90,12 +130,20 @@ function addTodoFriday() {
   const newTodoul = document.createElement("ul");
   const newTodo = document.createElement("li");
   const newTodoInput = document.createElement("input");
+  const removeTodo = document.createElement("button");
   newTodoInput.className = "container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4";
   newTodoInput.setAttribute("type", "text");
   newTodoInput.setAttribute("placeholder", "New Todo");
+  removeTodo.className = "container mx-auto text-black text-center bg-red-500 shadow-lg shadow-red-500 rounded-md m-4";
+  removeTodo.innerHTML = "Remove Todo";
   TodoFriday.after(newTodoul);
   newTodoul.appendChild(newTodo);
+  newTodo.appendChild(removeTodo);
   newTodo.appendChild(newTodoInput);
+  removeTodo.addEventListener('click', removeTodoFriday);
+  function removeTodoFriday() {
+    newTodo.remove();
+  }
 }
 
 //adds a todo to the saturday list
@@ -104,12 +152,20 @@ function addTodoSaturday() {
   const newTodoul = document.createElement("ul");
   const newTodo = document.createElement("li");
   const newTodoInput = document.createElement("input");
+  const removeTodo = document.createElement("button");
   newTodoInput.className = "container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4";
   newTodoInput.setAttribute("type", "text");
   newTodoInput.setAttribute("placeholder", "New Todo");
+  removeTodo.className = "container mx-auto text-black text-center bg-red-500 shadow-lg shadow-red-500 rounded-md m-4";
+  removeTodo.innerHTML = "Remove Todo";
   TodoSaturday.after(newTodoul);
   newTodoul.appendChild(newTodo);
+  newTodo.appendChild(removeTodo);
   newTodo.appendChild(newTodoInput);
+  removeTodo.addEventListener('click', removeTodoSaturday);
+  function removeTodoSaturday() {
+    newTodo.remove();
+  }
 }
 
 
