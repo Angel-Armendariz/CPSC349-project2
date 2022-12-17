@@ -400,7 +400,7 @@ function LoginNavButtonFooter () {
   return (
     <div className="LoginNavButtonFooter">
     
-    |&nbsp;  <a class="hover:text-blue-300 nav__button" href="./landingPage.html">Home</a>  	&nbsp;|	 	&nbsp;
+    |&nbsp;  <a class="hover:text-blue-300 nav__button" href="./index.html">Home</a>  	&nbsp;|	 	&nbsp;
     
            
     
