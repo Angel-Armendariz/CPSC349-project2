@@ -417,7 +417,7 @@ function LogoutNavButtonFooter() {
   return (
     <div className="LogoutNavButtonFooter">
     
-    |&nbsp;  <a class="hover:text-blue-300 nav__button" href="./landingPage.html">Home</a>  	&nbsp;|	 	&nbsp;
+    |&nbsp;  <a class="hover:text-blue-300 nav__button" href="./index.html">Home</a>  	&nbsp;|	 	&nbsp;
     
             <a class="hover:text-blue-300" href="./app-index.html">Calendar</a> 	&nbsp;| 	&nbsp;
     
