@@ -2,6 +2,11 @@
 <html lang="en">
 
 
+
+
+
+
+
 <!-- ##################################### Head #########################################-->
 
 
@@ -19,6 +24,7 @@
   <script src="https://unpkg.com/pocketbase/dist/pocketbase.umd.js" defer></script>
   <script type="module" src="app.js"></script>
   <script type="module" src="vanillaApp.js"></script>
+
 </head>
 
 
@@ -36,60 +42,7 @@
 
   </header>
 
-<hr>
-<!-- ##################################### Main #########################################-->
-
-<!-- ##################################### adding and removing names  #########################################-->
-<form id="name-form">
-<input id="name-input" type="text" placeholder="Add Name" class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"required />
-<button id="name-submit" class="h-8 px-4 m-2 text-sm text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md my-12 ">Save</button>
-
-<ul id="notes"></ul>
-
-<script>
-      const noteForm = document.getElementById("name-form");
-      const noteInput = document.getElementById("name-input");
-      const noteSubmit = document.getElementById("name-submit");
-      const notes = document.getElementById("notes");
-
-      let notesStorage = localStorage.getItem("notes")
-        ? JSON.parse(localStorage.getItem("notes"))
-        : [];
-
-      noteForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        notesStorage.push(noteInput.value);
-        localStorage.setItem("notes", JSON.stringify(notesStorage));
-        listBuilder(noteInput.value);
-        noteInput.value = "";
-      });
-
-      const listBuilder = (text) => {
-        const note = document.createElement("li");
-        note.innerHTML = text + "'s Calender" +' <button class=" text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md" onclick="deleteNote(this)">remove </button>';
-        notes.appendChild(note);
-      };
-
-      const getNotes = JSON.parse(localStorage.getItem("notes"));
-      getNotes.forEach((note) => {
-        listBuilder(note);
-      });
-
-      const deleteNote = (btn) => {
-        let el = btn.parentNode;
-        const index = [...el.parentElement.children].indexOf(el);
-        notesStorage.splice(index, 1);
-        localStorage.setItem("notes", JSON.stringify(notesStorage));
-        el.remove();
-      };
-      </script>
-
 <main>
-
-
-
-
-
 <div class="flex flex-col p-6">
 
 <div class="items-end flex flex-wrap justify-center space-x-6 space-y-6 h-auto w-screen">
@@ -248,18 +201,65 @@
     </div>
     <script src="./vanillaApp.js"></script>
 
-</div>
 
 
 </div>
+</div>
+
 
 </main>
+<div>
+<form id="name-form">
+<input id="name-input" type="text" placeholder="Add Name" class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"/>
+<button id="name-submit" class="h-8 px-4 m-2 text-sm text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md my-12 ">Save</button>
+
+<ul id="notes"></ul>
+
+<script>
+      const noteForm = document.getElementById("name-form");
+      const noteInput = document.getElementById("name-input");
+      const noteSubmit = document.getElementById("name-submit");
+      const notes = document.getElementById("notes");
+
+      let notesStorage = localStorage.getItem("notes")
+        ? JSON.parse(localStorage.getItem("notes"))
+        : [];
+
+      noteForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        notesStorage.push(noteInput.value);
+        localStorage.setItem("notes", JSON.stringify(notesStorage));
+        listBuilder(noteInput.value);
+        noteInput.value = "";
+      });
+
+      const listBuilder = (text) => {
+        const note = document.createElement("li");
+        notes.innerHTML = text + "'s Calender" +' <button class=" text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md" onclick="deleteNote(this)">remove </button>';
+        notes.appendChild(note);
+     };
+
+  const getNotes = JSON.parse(localStorage.getItem("notes"));
+      getNotes.forEach((note) => {
+        listBuilder(note);
+      });
+
+      const deleteNote = (btn) => {
+        let el = btn.parentNode;
+        const index = [...el.parentElement.children].indexOf(el);
+        notesStorage.splice(index, 1);
+        localStorage.setItem("notes", JSON.stringify(notesStorage));
+        el.remove();
+      };
+      </script>
+</div>
 <!-- ##################################### Footer #########################################-->
 <footer>
     <nav class="flex justify-center p-10" id="footerNavBar">
     </nav>
     <span>&copy;Copyright 2022</span>
 </footer>
+
 <script type="application/javascript" crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script type="application/javascript" crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script

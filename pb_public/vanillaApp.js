@@ -173,14 +173,9 @@ function addTodoSaturday() {
     newTodo.remove();
   }
 }
-<<<<<<< HEAD
-=======
 
 
-title.addEventListener('input', updateValue);
-function updateValue(e) {
-  user.innerHTML = e.target.value + "\'s Calendar";
-}
+
 
 
 
@@ -195,7 +190,7 @@ const todoTemplate = (todoTitle) => `
 const newTodo = () => {
   if (! todoInput.checkValidity()) {
     alert("Memo Content Empty")
-    
+
     return false
   }
 
@@ -219,7 +214,7 @@ const checkTodo = (el) => {
   }
 }
 
-const deleteTodo = (el) => {  
+const deleteTodo = (el) => {
   const todoContainer = el.target.parentElement
 
   todoContainer.parentNode.removeChild(el.target.parentElement)
@@ -230,4 +225,3 @@ const deleteTodo = (el) => {
 
   itemCountSpan.innerHTML--
 }
->>>>>>> 354b0554e34d66d89c31bac5460b4dd7645434b2
