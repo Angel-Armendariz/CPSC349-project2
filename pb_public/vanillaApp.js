@@ -175,10 +175,7 @@ function addTodoSaturday() {
 }
 
 
-title.addEventListener('input', updateValue);
-function updateValue(e) {
-  user.innerHTML = e.target.value + "\'s Calendar";
-}
+
 
 
 
@@ -193,7 +190,7 @@ const todoTemplate = (todoTitle) => `
 const newTodo = () => {
   if (! todoInput.checkValidity()) {
     alert("Memo Content Empty")
-    
+
     return false
   }
 
@@ -217,7 +214,7 @@ const checkTodo = (el) => {
   }
 }
 
-const deleteTodo = (el) => {  
+const deleteTodo = (el) => {
   const todoContainer = el.target.parentElement
 
   todoContainer.parentNode.removeChild(el.target.parentElement)
