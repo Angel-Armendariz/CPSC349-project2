@@ -5,4 +5,4 @@ For this project we will be creating a weekly planner app that is structured and
 3.Login page 
 4. Main application page(in this case, the weekly planner)
 5. About us page 
-Team members: Angel Armendariz, William Ye.
+Team members: Angel Armendariz, William Ye, Umar Nasir
