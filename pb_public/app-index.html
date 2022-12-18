@@ -209,11 +209,6 @@
     </div>
 
 
-
-
-
-
-
     <div class="flex flex-col shadow-lg w-60 p5">
 
         <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Saturday</h3>
@@ -224,12 +219,34 @@
             </li>
          </ul>
 
-
     </div>
 
-
-
-
+    <div class="container mx-auto px-4">
+      <h1 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Memo</h1>
+      <div class="flex p-4">
+        <span class="flex-1 text-center text-teal-900">Memo count: <span id="item-count">0</span></span>
+        <span class="flex-1 text-center text-teal-900">Memos not Completed: <span id="unchecked-count">0</span></span>
+      </div>
+      <div class="flex shadow bg-white p-2">
+        <input id="todo-input" class="border
+        border-blue-400
+        p-2
+        w-full
+        focus:outline-none
+        focus:ring-2
+        focus:ring-blue-600
+        focus:border-transparent
+        rounded-lg
+        bg-blue-200
+        text-gray-700
+        placeholder-gray-500" type="text" placeholder="Title..." maxlength="50" required>
+        <div onClick="newTodo();" class="bg-green-500 hover:bg-green-400 rounded text-white p-2 pl-5 pr-5 cursor-pointer">
+          <span class="font-semibold text-teal-100 text-sm cursor-pointer">Add</span>
+        </div>
+      </div>
+      <div id="todo-list"></div>
+    </div>
+    <script src="./vanillaApp.js"></script>
 
 </div>
 
