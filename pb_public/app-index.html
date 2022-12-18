@@ -38,14 +38,55 @@
 
 <hr>
 <!-- ##################################### Main #########################################-->
+
+<!-- ##################################### adding and removing names  #########################################-->
+<form id="name-form">
+<input id="name-input" type="text" placeholder="Add Name" class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"required />
+<button id="name-submit" class="h-8 px-4 m-2 text-sm text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md my-12 ">Save</button>
+
+<ul id="notes"></ul>
+
+<script>
+      const noteForm = document.getElementById("name-form");
+      const noteInput = document.getElementById("name-input");
+      const noteSubmit = document.getElementById("name-submit");
+      const notes = document.getElementById("notes");
+
+      let notesStorage = localStorage.getItem("notes")
+        ? JSON.parse(localStorage.getItem("notes"))
+        : [];
+
+      noteForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        notesStorage.push(noteInput.value);
+        localStorage.setItem("notes", JSON.stringify(notesStorage));
+        listBuilder(noteInput.value);
+        noteInput.value = "";
+      });
+
+      const listBuilder = (text) => {
+        const note = document.createElement("li");
+        note.innerHTML = text + "'s Calender" +' <button class=" text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md" onclick="deleteNote(this)">remove </button>';
+        notes.appendChild(note);
+      };
+
+      const getNotes = JSON.parse(localStorage.getItem("notes"));
+      getNotes.forEach((note) => {
+        listBuilder(note);
+      });
+
+      const deleteNote = (btn) => {
+        let el = btn.parentNode;
+        const index = [...el.parentElement.children].indexOf(el);
+        notesStorage.splice(index, 1);
+        localStorage.setItem("notes", JSON.stringify(notesStorage));
+        el.remove();
+      };
+      </script>
+
 <main>
-  <h1 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">
-    Enter Your Name:
-    <input type="text" id = "title"></input>
-    <span>  
-        <!--Make a button to enter your name-->
-    </span><p id = "user"></p>
-</h1>
+
+
 
 
 
@@ -64,7 +105,7 @@
         <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Sunday</h3>
         <button id = "TodoSunday" class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
         <ul>
-            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"> 
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
               <input id = "NewTodoSunday" type="text" placeholder="New Todo" class="text-center"></input>
             </li>
          </ul>

@@ -167,9 +167,3 @@ function addTodoSaturday() {
     newTodo.remove();
   }
 }
-
-
-title.addEventListener('input', updateValue);
-function updateValue(e) {
-  user.innerHTML = e.target.value + "\'s Calendar";
-}
