@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+
+
+
+
+
+
+<!-- ##################################### Head #########################################-->
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Calendar App</title>
+
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <link rel="stylesheet" type="text/css" href="./input.css">
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js" defer></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" defer></script>
+  <script src="https://unpkg.com/pocketbase/dist/pocketbase.umd.js" defer></script>
+  <script type="module" src="app.js"></script>
+  <script type="module" src="vanillaApp.js"></script>
+
+</head>
+
+
+
+<!-- ##################################### Body #########################################-->
+
+<body class="bg-gray-100">
+
+
+<!-- ##################################### Nav Bar #########################################-->
+<header>
+
+    <nav class="p-6" id="navBar">
+    </nav>
+
+  </header>
+
+<main>
+<div class="flex flex-col p-6">
+
+<div class="items-end flex flex-wrap justify-center space-x-6 space-y-6 h-auto w-screen">
+
+
+
+
+
+
+
+    <div class="flex flex-col shadow-lg w-60 p5">
+
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Sunday</h3>
+        <button id = "TodoSunday" class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+        <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <input id = "NewTodoSunday" type="text" placeholder="New Todo" class="text-center"></input>
+            </li>
+         </ul>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="flex flex-col shadow-lg w-60 p5">
+
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Monday</h3>
+        <button id = "TodoMonday" class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+        <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <input id = "NewTodoMonday" type="text" placeholder="New Todo" class="text-center"></input>
+            </li>
+         </ul>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="flex flex-col shadow-lg w-60 p5">
+
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Tuesday</h3>
+        <button id = "TodoTuesday" class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+        <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <input id = "NewTodoTuesday" type="text" placeholder="New Todo" class="text-center"></input>
+            </li>
+         </ul>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="flex flex-col shadow-lg w-60 p5">
+
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Wednesday</h3>
+        <button id = "TodoWednesday" class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+        <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <input id = "NewTodoWednesday" type="text" placeholder="New Todo" class="text-center"></input>
+            </li>
+         </ul>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="flex flex-col shadow-lg w-60 p5">
+
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Thursday</h3>
+        <button id = "TodoThursday" class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+        <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <input id = "NewTodoThursday" type="text" placeholder="New Todo" class="text-center"></input>
+            </li>
+         </ul>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="flex flex-col shadow-lg w-60 p5">
+
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Friday</h3>
+        <button id = "TodoFriday" class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+        <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <input id = "NewTodoFriday" type="text" placeholder="New Todo" class="text-center"></input>
+            </li>
+         </ul>
+
+
+    </div>
+
+
+    <div class="flex flex-col shadow-lg w-60 p5">
+
+        <h3 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Saturday</h3>
+        <button id = "TodoSaturday" class="container mx-auto text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md m-4">Add Todo</button>
+        <ul>
+            <li class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4">
+              <input id = "NewTodoSaturday" type="text" placeholder="New Todo" class="text-center"></input>
+            </li>
+         </ul>
+
+    </div>
+
+    <div class="container mx-auto px-4">
+      <h1 class="container mx-auto text-white text-center bg-indigo-500 shadow-lg shadow-indigo-500 rounded-md m-4">Memo</h1>
+      <div class="flex p-4">
+        <span class="flex-1 text-center text-teal-900">Memo count: <span id="item-count">0</span></span>
+        <span class="flex-1 text-center text-teal-900">Memos not Completed: <span id="unchecked-count">0</span></span>
+      </div>
+      <div class="flex shadow bg-white p-2">
+        <input id="todo-input" class="border
+        border-blue-400
+        p-2
+        w-full
+        focus:outline-none
+        focus:ring-2
+        focus:ring-blue-600
+        focus:border-transparent
+        rounded-lg
+        bg-blue-200
+        text-gray-700
+        placeholder-gray-500" type="text" placeholder="Title..." maxlength="50" required>
+        <div onClick="newTodo();" class="bg-green-500 hover:bg-green-400 rounded text-white p-2 pl-5 pr-5 cursor-pointer">
+          <span class="font-semibold text-teal-100 text-sm cursor-pointer">Add</span>
+        </div>
+      </div>
+      <div id="todo-list"></div>
+    </div>
+    <script src="./vanillaApp.js"></script>
+
+
+
+</div>
+</div>
+
+
+</main>
+
+
+<div>
+  <form id="name-form">
+<input id="name-input" type="text" placeholder="Add Name" class="container mx-auto text-black text-center bg-white-500 shadow-lg shadow-indigo-500 rounded-md m-4"required />
+<button id="name-submit" class="h-8 px-4 m-2 text-sm text-black text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md my-12 ">Save</button>
+
+<ul id="notes"></ul>
+
+<script>
+  	const noteForm = document.getElementById("name-form");
+  	const noteInput = document.getElementById("name-input");
+  	const noteSubmit = document.getElementById("name-submit");
+  	const notes = document.getElementById("notes");
+
+  	let notesStorage = localStorage.getItem("notes")
+    	? JSON.parse(localStorage.getItem("notes"))
+    	: [];
+
+  	noteForm.addEventListener("submit", (e) => {
+    	e.preventDefault();
+    	notesStorage.push(noteInput.value);
+    	localStorage.setItem("notes", JSON.stringify(notesStorage));
+    	listBuilder(noteInput.value);
+    	noteInput.value = "";
+  	});
+
+  	const listBuilder = (text) => {
+    	const note = document.createElement("li");
+    	note.innerHTML = text + "'s Calender" +' <button class=" text-white text-center bg-green-500 shadow-lg shadow-indigo-500 rounded-md" onclick="deleteNote(this)">remove </button>';
+    	notes.appendChild(note);
+  	};
+
+  	const getNotes = JSON.parse(localStorage.getItem("notes"));
+  	getNotes.forEach((note) => {
+    	listBuilder(note);
+  	});
+
+  	const deleteNote = (btn) => {
+    	let el = btn.parentNode;
+    	const index = [...el.parentElement.children].indexOf(el);
+    	notesStorage.splice(index, 1);
+    	localStorage.setItem("notes", JSON.stringify(notesStorage));
+    	el.remove();
+  	};
+  	</script>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ##################################### Footer #########################################-->
+<footer>
+    <nav class="flex justify-center p-10" id="footerNavBar">
+    </nav>
+    <span>&copy;Copyright 2022</span>
+</footer>
+
+<script type="application/javascript" crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script type="application/javascript" crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script
+      type="application/javascript"
+      defer
+      crossorigin
+      src="https://unpkg.com/pocketbase@0.8.3/dist/pocketbase.umd.js"
+    ></script>
+
+<script type ='module' src="app.js"></script>
+</body>
+</html>
